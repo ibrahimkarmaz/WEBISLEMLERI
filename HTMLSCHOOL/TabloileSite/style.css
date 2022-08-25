@@ -1,0 +1,43 @@
+#Anadiv{
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px; /*20 LEFT 20 RİGHT OLMAK ÜZERE PADDİNG EKLENDİ.*/
+    height: auto;
+    padding:20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a:visited{
+    color:blue;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:active{
+    color: orange;
+}
+p{
+    text-align: justify;
+}
+
+.tablebaslik{
+    background-color: rgb(221, 207, 207);
+}
+table{
+    border: 1px solid black;
+}
+th{
+    border: 1px solid black;
+}
+tr{
+    border-left: 1px solid black;
+}
+body{
+    background-color: rgb(197, 209, 218);
+}
+h1{
+    text-align: center;
+    font-size: 42px;
+}

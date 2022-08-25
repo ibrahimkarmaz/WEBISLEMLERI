@@ -1,0 +1,125 @@
+Başlık Özelliği;
+Başlık özelliğinin değeri, fareyi öğenin üzerine getirdiğinizde bir araç ipucu olarak görüntülenecektir. 
+Örnek:  <h3 title="A.K Cinnet Olayı">Cinnet</h3>
+
+
+<hr> --> ------------------------------------------------------ Yatay çizgi ekler.
+
+
+
+Bir <pre>öğenin içindeki metin, sabit genişlikli bir yazı tipinde (genellikle Courier) görüntülenir ve hem boşlukları hem de satır sonlarını korur:
+<pre>
+  Sana su veren
+  
+  İtfayenin hortumunu s*keyim
+</pre>
+
+
+
+
+
+Bölüm özeti
+background-color:Arka plan rengi için kullanın
+color:Metin renkleri için kullanın
+font-family:Metin yazı tipleri için kullanın
+font-size:Metin boyutları için kullanın
+text-align:Metin hizalaması için kullanın
+
+
+
+<b>	Defines bold text
+<em>	Defines emphasized text 
+<i>	Defines a part of text in an alternate voice or mood
+<small>	Defines smaller text
+<strong>	Defines important text
+<sub>	Defines subscripted text
+<sup>	Defines superscripted text
+<ins>	Defines inserted text
+<del>	Defines deleted text
+<mark>	Defines marked/highlighted text
+
+
+
+
+Harici CSS
+Birçok HTML sayfasının stilini tanımlamak için harici bir stil sayfası kullanılır.
+
+  <link rel="stylesheet" href="styles.css">
+--> Kullanılacak sayfada çağrılmalı
+
+
+Bölüm özeti
+styleSatır içi stil için HTML özelliğini kullanın
+<style>Dahili CSS'yi tanımlamak için HTML öğesini kullanın
+<link>Harici bir CSS dosyasına başvurmak için HTML öğesini kullanın
+<head><style> ve <link> öğelerini depolamak için HTML öğesini kullanın
+colorMetin renkleri için CSS özelliğini kullanın
+font-familyMetin yazı tipleri için CSS özelliğini kullanın
+font-sizeMetin boyutları için CSS özelliğini kullanın
+borderKenarlıklar için CSS özelliğini kullanın
+paddingKenarlık içindeki boşluk için CSS özelliğini kullanın
+marginSınırın dışındaki boşluk için CSS özelliğini kullanın
+<a>Bir bağlantıyı tanımlamak için öğeyi kullanın
+hrefBağlantı adresini tanımlamak için özniteliği kullanın
+targetBağlantılı belgenin nerede açılacağını tanımlamak için özniteliği kullanın
+Bir resmi bağlantı olarak kullanmak için <img>(inside) öğesini kullanın<a>
+Kullanıcının e-posta programını açan bir bağlantı oluşturmak mailto:için özelliğin içindeki şemayı kullanın. href
+
+
+***********
+Bir sayfada yer imlerini tanımlamak için id(id=" value ") özniteliğini kullanın
+Yer işaretine bağlanmak için özniteliği href(href="# value ") kullanın
+***********
+
+
+text-decoration:none;
+altında çizgi varsa kapatır.
+
+
+<a href="mailto:someone@example.com">Send email</a>
+
+
+colspan="2" --Tablo HÜcre birleştirme
+rowspan="2" --Satır birleştirme
+
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico"><!--Bu kodla title kısmını resimlendirir.-->
+----------
+Madde işaretleri yerine kareleri görüntülemek için CSS kullanın.
+
+<ul style="
+list-style-type:square
+;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+-------------
+
+<meta charset="UTF-8/"> SAYFA TÜRKÇE OLDUĞUNU BELİRTİYORUZ.
+META TAM ARAŞTIR.
+
+lorem100 rasgele yazi
+
+Here are the block-level elements in HTML:
+
+<address><article><aside><blockquote><canvas><dd><div><dl><dt><fieldset><figcaption><figure><footer><form><h1>-<h6><header><hr><li><main><nav><noscript><ol><p><pre><section><table><tfoot><ul><video>
+
+
+Here are the inline elements in HTML:
+
+<a><abbr><acronym><b><bdo><big><br><button><cite><code><dfn><em><i><img><input><kbd><label><map><object><output><q><samp><script><select><small><span><strong><sub><sup><textarea><time><tt><var>
+
+
+HTML classözelliği, bir öğe için bir veya daha fazla sınıf adını belirtir.
+Sınıflar, belirli öğeleri seçmek ve bunlara erişmek için CSS ve JavaScript tarafından kullanılır.
+Nitelik class, herhangi bir HTML öğesinde kullanılabilir
+Sınıf adı büyük/küçük harf duyarlıdır
+Farklı HTML öğeleri aynı sınıf adına işaret edebilir
+JavaScript, belirli bir sınıf adına sahip öğelere getElementsByClassName() yöntemle erişebilir
+
+VARLIKLARLA İLGİLİ LİNK:
+https://www.w3schools.com/html/html_entities.asp
+Varlık içeriği büyük kü.ük euro simgesi...  yuvarlak içinde c işareti yanı copy vs......
+
+Emojiler :https://www.w3schools.com/html/html_emojis.asp
+Tüm Emejiler :https://www.w3schools.com/charsets/ref_emoji.asp     ************

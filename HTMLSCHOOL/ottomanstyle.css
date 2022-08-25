@@ -1,0 +1,25 @@
+p{
+    text-align:justify;
+    color:black;
+    padding-left: 150px;
+    padding-right:150px;
+
+}
+h1{
+    text-align: center;
+}
+h2{
+    padding-left: 150px;
+}
+ol{
+    padding-left: 170px;
+}
+body{
+    background-image: url("https://i.nefisyemektarifleri.com/2018/09/20/istanbul-manzarasi-en-guzel-bu-8-mekanda-seyredilir.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    /*background-size: cover;*//*ARKAPLANIN TÜM YEDİRİYOR*/
+    background-size: 50% 50%;
+    background-attachment: fixed;/*Fotoğrafı arkaplanda sabitliyor*/
+
+}

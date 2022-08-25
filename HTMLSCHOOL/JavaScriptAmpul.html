@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript"> <!--ARAMA MOTORU İÇİN KELİME TANIMLAMA-->
+    <meta name="description" content="AMPUL YAKMA SONDURME"><!--SAYFA İÇİN AÇIKLAMA-->
+    <meta name="author" content="John Doe"><!--SAYFA YAZARI-->
+    <meta http-equiv="refresh" content="30"><!--30 SANİYEDE BİR YENİLEME BELGEYİ**********-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--TÜM CİHAZLARDA İYİ GÖSTER-->
+    <title>HTML BAŞLIK</title>
+</head>
+<body>
+    
+    <script>
+        function ampul(durum)
+        {
+            var pic;
+            if(durum==0)
+            {
+                pic="kapaliampul.png"
+                
+            }
+            else 
+            {
+                pic="acikampul.png"
+            }
+            document.getElementById("image").style.width=50;
+            document.getElementById("image").src=pic;
+        }
+    </script>
+
+<img id="image" src="kapaliampul.png" width="200" height="200">
+<button type="button" onclick="ampul(1)">Yak</button>
+<button type="button" onclick="ampul(0)">Sondur</button>
+</body>
+</html>

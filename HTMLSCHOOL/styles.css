@@ -1,0 +1,26 @@
+body{
+    background-color: powderblue;
+}
+h1{
+    color: blue;
+}
+
+a:link{
+
+    color:yellow;
+}
+a:visited 
+{
+    color: black;
+}
+a:hover{
+    color:red;
+}
+a:active{
+    color: blue;
+}
+
+/*NOTLAR:
+Visited üzerine gelmeden kullanıcıya gözüken kısım
+Hover üzerine gelince olacaklar
+Active tıklandığında olacaklar(tıklamaya bassiğimizda)*/
