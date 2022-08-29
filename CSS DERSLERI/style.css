@@ -1,0 +1,46 @@
+h1{
+    color: white;
+    background-color: blue;
+    text-align: center;
+}
+body{
+   /* background-color: black;*/
+}
+div{
+border: 1px solid blue;
+margin-top: 50px;
+margin-bottom: 50px;
+margin-left: auto;
+margin-right: auto;
+width: 1200px;
+background-color: gray;
+padding:20px;
+border-radius: 10px;
+}
+table{
+    border-collapse: collapse;/*Tabloarı kenarlarını toparlar*/
+    width: 100%;
+}
+table,th,td{
+    border: 1px solid black;
+}
+th{
+    padding-left:10px ;
+    height: 30px;
+    text-align: left;
+}
+td{
+    height: 40px;
+    vertical-align: top;
+    padding-left:10px ;
+}
+tr:hover{
+    background-color: pink;
+    color: white;
+}
+tr:nth-child(even){
+    background-color: blue;
+}
+tr:nth-child(odd){
+    background-color: red;
+}

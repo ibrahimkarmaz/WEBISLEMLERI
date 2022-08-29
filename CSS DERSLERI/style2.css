@@ -1,0 +1,13 @@
+input[type=text],input[type=password]{
+    
+    width: 100%;
+    padding: 6px;
+    border: 2px solid rgb(238, 40, 40);
+    border-radius: 10px;
+    border-bottom: 2px solid blue;
+    color: red;
+    background-color:black;
+}
+input[type=text]:focus,input[type=password]:focus{
+background-color: white;
+}

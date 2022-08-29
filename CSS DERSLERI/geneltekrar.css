@@ -1,0 +1,36 @@
+body{
+   /*background-color: aqua;
+   opacity: 0.3;*/
+    background-image: url("image\\arkaplan.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: scroll;/*Fixed sabitler*/
+    padding: 100px;
+}
+p{
+    color: red;
+    /*text-decoration: overline underline;
+    text-decoration-color: blue;
+    text-decoration-style: wavy;*/
+    text-decoration: solid red double;
+}
+p.kenarliklar{
+    border-style: dashed;
+    border-width: 10px;
+    border-color:blue;
+    text-transform: uppercase;
+}
+p.SolSimge{
+    border-style:dashed;
+    border-left-style: solid;
+    border-width: 5px;
+    border-left-width: 10px;
+    padding-left: 5px;
+    border-left-color: blue;
+    text-transform: lowercase;
+}
+p.borderx{
+    border:2px solid blue;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
