@@ -1,0 +1,31 @@
+﻿@model List<FirstPro.Models.Kitap>;
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index5</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Kitap Adı</th>
+            <th>Yazar</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.KitapAd</td>
+                <td>@item.Yazar</td>
+                </tr>
+        }
+    </table>
+   
+</body>
+</html>
