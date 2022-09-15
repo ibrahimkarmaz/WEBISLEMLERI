@@ -31,7 +31,8 @@ namespace FirstPro.Controllers
             {
                 new Kitap{ID=1,KitapAd="Kuyucaklı Yusuf",Yazar="Sebattin Ali"},
                 new Kitap{ID=2,KitapAd="80 Günde Deveri Alem",Yazar="Jules Verne"},
-                new Kitap{ID=3,KitapAd="Bilinmeyen bir kadının mektubu",Yazar="Zweig"}
+                new Kitap{ID=3,KitapAd="Bilinmeyen bir kadının mektubu",Yazar="Zweig"},
+                new Kitap{ID=4,KitapAd="Şeker Portakalı",Yazar="Vasconceulos"}
             };
             return View(Kitaplar);
         }

@@ -12556,11 +12556,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ibrah\\source\\repos\\FirstPro\\FirstPro\\FirstPro.csproj",
+      "projectUniqueName": "C:\\Users\\ibrah\\OneDrive\\Belgeler\\WEBDERSLERI\\WEBISLEMLERI\\AspNetCoreMVC\\FirstPro\\FirstPro\\FirstPro.csproj",
       "projectName": "FirstPro",
-      "projectPath": "C:\\Users\\ibrah\\source\\repos\\FirstPro\\FirstPro\\FirstPro.csproj",
+      "projectPath": "C:\\Users\\ibrah\\OneDrive\\Belgeler\\WEBDERSLERI\\WEBISLEMLERI\\AspNetCoreMVC\\FirstPro\\FirstPro\\FirstPro.csproj",
       "packagesPath": "C:\\Users\\ibrah\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ibrah\\source\\repos\\FirstPro\\FirstPro\\obj\\",
+      "outputPath": "C:\\Users\\ibrah\\OneDrive\\Belgeler\\WEBDERSLERI\\WEBISLEMLERI\\AspNetCoreMVC\\FirstPro\\FirstPro\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages",

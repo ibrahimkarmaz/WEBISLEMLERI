@@ -31,7 +31,7 @@ namespace FirstPro
                 await context.Response.WriteAsync("Hello Wordsld!");
             });*/
 
-
+            app.UseStaticFiles();
             app.UseMvc(routes=>{
                 routes.MapRoute(
                     name:"default",
