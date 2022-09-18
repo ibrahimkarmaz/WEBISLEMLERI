@@ -19,7 +19,7 @@
 </head>
 <body>
 
-    <table class="table table-bordered" >
+    <table class="table table-bordered showdow-lg" >
         <tr>
             <th>ID</th>
             <th>ŞEHİR AD</th>
@@ -31,7 +31,7 @@
         </tr>
         @foreach (var item in Model)
         {
-            <tr>
+            <tr class="user-select-none">
                 <td>@item.ID</td>
                 <td>@item.SehirAd</td>
                 <td>@item.Ulke</td>
