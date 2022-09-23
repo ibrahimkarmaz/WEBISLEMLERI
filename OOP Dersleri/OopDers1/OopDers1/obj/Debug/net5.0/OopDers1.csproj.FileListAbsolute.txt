@@ -8,6 +8,7 @@ C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\OopDers1\obj\Debug\net5.0\OopDers1.RazorAssemblyInfo.cs
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\OopDers1\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\OopDers1\bin\Debug\net5.0\appsettings.json
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\OopDers1\bin\Debug\net5.0\libman.json
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\OopDers1\bin\Debug\net5.0\OopDers1.exe
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\OopDers1\bin\Debug\net5.0\OopDers1.deps.json
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\OopDers1\bin\Debug\net5.0\OopDers1.runtimeconfig.json
@@ -127,11 +128,15 @@ C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\OopDers1\obj\Debug\net5.0\OopDers1.TagHelpers.input.cache
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\OopDers1\obj\Debug\net5.0\OopDers1.TagHelpers.output.cache
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\OopDers1\obj\Debug\net5.0\OopDers1.RazorCoreGenerate.cache
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\OopDers1\obj\Debug\net5.0\Razor\Views\Default\Deneme.cshtml.g.cs
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\OopDers1\obj\Debug\net5.0\Razor\Views\Default\Index.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\OopDers1\obj\Debug\net5.0\Razor\Views\Default\Musteriler.cshtml.g.cs
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\OopDers1\obj\Debug\net5.0\Razor\Views\Default\Urunler.cshtml.g.cs
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\OopDers1\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\OopDers1\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\OopDers1\obj\Debug\net5.0\Razor\Views\Product\Index.cshtml.g.cs
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\OopDers1\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\OopDers1\obj\Debug\net5.0\Razor\Views\Shared\_CoreLayout.cshtml.g.cs
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\OopDers1\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\OopDers1\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\OopDers1\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
@@ -145,6 +150,5 @@ C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\OopDers1\obj\Debug\net5.0\OopDers1.pdb
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\OopDers1\obj\Debug\net5.0\OopDers1.genruntimeconfig.cache
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\OopDers1\obj\Debug\net5.0\ref\OopDers1.dll
-C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\OopDers1\obj\Debug\net5.0\Razor\Views\Default\Musteriler.cshtml.g.cs
-C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\OopDers1\obj\Debug\net5.0\Razor\Views\Default\Deneme.cshtml.g.cs
-C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\OopDers1\bin\Debug\net5.0\libman.json
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\OopDers1\obj\Debug\net5.0\Razor\Views\Product\AddProduct.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\OOP Dersleri\OopDers1\OopDers1\obj\Debug\net5.0\Razor\Views\Product\UpdatePruduct.cshtml.g.cs

@@ -1,0 +1,26 @@
+﻿@model List<CoreDepartman.Models.Departmanlar>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<table class="table table-bordered table-primary">
+    <tr>
+        <th>#</th>
+        <th>Departman Adı</th>
+        <th>İşlemler</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.DepartmanAd</td>
+            <td>
+                <a class="btn btn-danger" asp-controller="Depart" asp-action="DepartmanSil" asp-route-id=@item.ID>SİL</a>
+                <a class="btn btn-success" asp-controller="Depart" asp-action="DepartmanGetir" asp-route-id=@item.ID>DÜZENLE</a>
+                <a href="" class="btn btn-primary">DETAYLAR</a>
+
+            </td>
+        </tr>
+    }
+</table>
+<a asp-controller="Depart" asp-action="YeniDepartman" class="btn btn-outline-primary">Yeni Departman</a>

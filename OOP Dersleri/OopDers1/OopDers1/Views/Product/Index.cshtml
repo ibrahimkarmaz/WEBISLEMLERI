@@ -1,0 +1,33 @@
+﻿@using OopDers1.Entity
+@model List<Product>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_CoreLayout.cshtml";
+}
+
+<h1>Ürün Sayfası</h1>
+
+<table class="table table-bordered table-dark table-hover">
+    
+    <tr>
+        <th>#</th>
+        <th>ÜRÜN ADI</th>
+        <th>FİYAT</th>
+        <th>STOK</th>
+        <th>SİL</th>
+        <th>DÜZENLE</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.Name</td>
+            <td>@item.Price</td>
+            <td>@item.Stock</td>
+            <td><a href="/Product/DeleteProduct/@item.ID" class="btn btn-outline-danger">SİL</a></td>
+            <td><a href="/Product/UpdatePruduct/@item.ID" class="btn btn-outline-info">DÜZENLE</a></td>
+        </tr>
+    }
+</table>
+
+<a href="/Product/AddProduct/" class="btn btn-primary">YENİ ÜRÜN GİRİŞİ</a>

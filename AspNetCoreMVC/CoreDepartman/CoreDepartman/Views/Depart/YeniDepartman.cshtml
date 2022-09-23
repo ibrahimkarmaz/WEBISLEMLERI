@@ -1,0 +1,12 @@
+﻿@model CoreDepartman.Models.Departmanlar
+
+@{
+    ViewData["Title"] = "YeniDepartman";
+}
+
+<form class="form-group" asp-controller="Depart" asp-action="YeniDepartman" method="post">
+    <label asp-for="DepartmanAd" class="form-control">Departman Adı:</label>
+    <input asp-for="DepartmanAd" class="form-control" placeholder="Departman Adı Giriniz."/>
+    <button type="submit" class="btn btn-outline-primary"> Departmen Ekle</button>
+</form>
+

@@ -1,0 +1,14 @@
+﻿@model CoreDepartman.Models.Departmanlar
+@{
+    ViewData["Title"] = "DepartmanGetir";
+}
+
+<form asp-controller="Depart" asp-action="DepartmanGuncelle" method="post">
+    <label class="form-control" asp-for="ID">Departman ID:</label>
+    <input class="form-control" asp-for="ID"  readonly/>
+    <label class="form-control" asp-for="DepartmanAd">Departman Adı:</label>
+    <input class="form-control" asp-for="DepartmanAd" />
+    <button class="btn btn-outline-success" type="submit">Departman Düzenle</button>
+</form>
+
+

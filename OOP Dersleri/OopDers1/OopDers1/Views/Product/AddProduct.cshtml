@@ -1,0 +1,18 @@
+﻿@model OopDers1.Entity.Product
+
+@{
+    ViewData["Title"] = "AddProduct";
+    Layout = "~/Views/Shared/_CoreLayout.cshtml";
+}
+
+<h1>ÜRÜN EKLEME SAYFASI</h1>
+
+<form method="post" asp-controller="Product" asp-action="AddProduct">
+    <label>ÜRÜN ADI:</label>
+    <input type="text" asp-for="Name"  class="form-control"/> <br />
+    <label>FİYAT:</label>
+    <input type="text" asp-for="Price" class="form-control"/> <br />
+    <label>STOK:</label>
+    <input type="text" asp-for="Stock" class="form-control"/> <br />
+    <button class="btn btn-outline-info">Ürün Kaydet </button>
+</form>
