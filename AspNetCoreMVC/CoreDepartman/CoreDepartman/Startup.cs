@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.Cookies;//Authorize için
 
 namespace CoreDepartman
 {
@@ -24,6 +25,11 @@ namespace CoreDepartman
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(x =>
+                {
+                    x.LoginPath = "/Login/GirisYap/";
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,6 +45,9 @@ namespace CoreDepartman
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+            app.UseAuthentication();
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 

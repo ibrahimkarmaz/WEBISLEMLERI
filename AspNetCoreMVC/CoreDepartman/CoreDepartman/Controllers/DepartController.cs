@@ -47,5 +47,13 @@ namespace CoreDepartman.Controllers
             _context.SaveChanges();
             return RedirectToAction("Index");
         }
+
+        public IActionResult DepartmanDetay(int id)
+        {
+            var degerler=_context.Personels.Where(x=>x.DepartmanID==id).ToList();
+            ViewBag.baslik= _context.Departmanlars.Where(y => y.ID == id).FirstOrDefault().DepartmanAd;
+
+            return View(degerler);
+        }
     }
 }

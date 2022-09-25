@@ -1,0 +1,33 @@
+﻿@model List<CoreDepartman.Models.Personel>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<table class="table table-bordered table-primary">
+    <tr>
+        <th>#</th>
+        <th>Ad</th>
+        <th>Soyad</th>
+        <th>Şehir</th>
+        <th>Departman</th>
+        <th>İşlemler</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.PerID</td>
+            <td>@item.Ad</td>
+            <td>@item.Soyad</td>
+            <td>@item.Sehir</td>
+            <td>@item.Departman.DepartmanAd</td>
+            <td>
+                <a class="btn btn-danger" asp-controller="Personel" asp-action="Index" asp-route-id=@item.PerID>SİL</a>
+                <a class="btn btn-success" asp-controller="Personel" asp-action="Index" asp-route-id=@item.PerID>DÜZENLE</a>
+                <a href="" class="btn btn-primary">DETAYLAR</a>
+
+            </td>
+        </tr>
+    } 
+</table>
+<a asp-controller="Personel" asp-action="YeniPersonel" class="btn btn-outline-primary">Yeni Personel</a>
+

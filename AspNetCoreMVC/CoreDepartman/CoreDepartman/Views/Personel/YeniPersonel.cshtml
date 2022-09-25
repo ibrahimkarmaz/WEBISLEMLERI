@@ -1,0 +1,22 @@
+﻿@model CoreDepartman.DepartmanPersonelView
+@{
+    ViewData["Title"] = "YeniPersonel";
+}
+
+<form asp-controller="Personel" asp-action="YeniPersonel" method="post">
+    <label class="form-control" asp-for="Personel.Ad">Personel Adı:</label>
+    <input class="form-control" asp-for="Personel.Ad" />
+
+    <label class="form-control" asp-for="Personel.Soyad">Personel Soyad:</label>
+    <input class="form-control" asp-for="Personel.Soyad" />
+
+    <label class="form-control" asp-for="Personel.Sehir">Şehir:</label>
+    <input class="form-control" asp-for="Personel.Sehir" />
+
+    <label class="form-control" asp-for="Personel.Departman.ID">Departman:</label>
+    <select asp-for="Personel.Departman.ID" asp-items="Model.DepartmanList" class="form-control">Departman Alanı Seçiniz. </select>
+
+    <button type="submit" class="btn btn-outline-primary">Kaydet</button>
+</form>
+
+

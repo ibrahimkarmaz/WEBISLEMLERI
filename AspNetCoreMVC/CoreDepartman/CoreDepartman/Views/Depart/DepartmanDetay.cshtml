@@ -1,0 +1,27 @@
+﻿@model List<CoreDepartman.Models.Personel>
+@{
+    ViewData["Title"] = "DepartmanDetay";
+}
+<h2 class="text-center text-uppercase"> @ViewBag.baslik</h2>
+<table class="table table-bordered table-primary">
+<tr>
+    <th>#</th>
+    <th>Ad</th>
+    <th>Soyad</th>
+    <th>Şehir</th>
+    <th>İşlemler</th>
+</tr>
+@foreach (var item in Model)
+{
+    <tr>
+        <td>@item.PerID</td>
+        <td>@item.Ad</td>
+        <td>@item.Soyad</td>
+        <td>@item.Sehir</td>
+        <td>
+            <a href="" class="btn btn-primary">DETAYLAR</a>
+
+        </td>
+    </tr>
+}
+</table>
