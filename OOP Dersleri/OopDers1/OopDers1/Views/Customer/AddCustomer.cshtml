@@ -1,0 +1,25 @@
+﻿@model List<OopDers1.Entity.Customer>
+@{
+    ViewData["Title"] = "AddCustomer";
+    Layout = "~/Views/Shared/_CoreLayout.cshtml";
+}
+
+<h1>AddCustomer</h1>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>MÜŞTERİ ADI</th>
+        <th>ŞEHİR</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.Name</td>
+            <td>@item.City</td>
+        </tr>
+    }
+</table>
+
+<a asp-controller="Customer" asp-action="AddCustomer" class="btn btn-outline-primary p-2">YENİ MÜŞTERİ</a>
