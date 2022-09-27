@@ -157,3 +157,8 @@ C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\Demo_Pro
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\Demo_Product\Demo_Product\obj\Debug\net5.0\Razor\Views\Shared\_UILayout.cshtml.g.cs
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\Demo_Product\Demo_Product\obj\Debug\net5.0\Razor\Views\Product\Index.cshtml.g.cs
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\Demo_Product\Demo_Product\obj\Debug\net5.0\Razor\Views\Partials\PartialHeader.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\Demo_Product\Demo_Product\obj\Debug\net5.0\Razor\Views\Product\AddProduct.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\Demo_Product\Demo_Product\obj\Debug\net5.0\Razor\Views\Product\UpdateProduct.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\Demo_Product\Demo_Product\obj\Debug\net5.0\Razor\Views\Customer\Index.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\Demo_Product\Demo_Product\obj\Debug\net5.0\Razor\Views\Customer\AddCustomer.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\Demo_Product\Demo_Product\obj\Debug\net5.0\Razor\Views\Customer\UpdateCustomer.cshtml.g.cs

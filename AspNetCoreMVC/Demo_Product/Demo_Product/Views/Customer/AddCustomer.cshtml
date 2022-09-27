@@ -1,0 +1,15 @@
+﻿@model EntitiyLayer.Concrete.Customer
+@{
+    ViewData["Title"] = "AddCustomer";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+
+<form asp-controller="Customer" asp-action="AddCustomer"  method="post">
+    <label asp-for="Name" class="form-control">MÜŞTERİ ADI:</label>
+    <input  asp-for="Name" class="form-control"/>
+
+    <label asp-for="City" class="form-control">ŞEHİR:</label>
+    <input asp-for="City" class="form-control" />
+
+    <button type="submit" class="btn btn-outline-primary">MÜŞTERİ EKLE</button>
+</form>

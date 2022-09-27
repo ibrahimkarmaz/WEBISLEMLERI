@@ -15,6 +15,7 @@ namespace BusinessLayer.Concrete
         //Peki Nasıl Oluşturulacak Asağıdaki ctor üste değişkeni yazdıktan sonra
         //ProductManager'in üstüne gelip ctrl+nokta ile; generate cunstruct a tıkla değişkeni seç
 
+        //Manager çağırmada yeni ProductDal Oluşturulmalı(New EFProductDAL() gibi)
         public ProductManager(IProductDAL productDAL)
         {
             _productDAL = productDAL;
