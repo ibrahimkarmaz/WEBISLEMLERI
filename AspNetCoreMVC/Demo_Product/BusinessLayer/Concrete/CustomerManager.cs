@@ -18,6 +18,11 @@ namespace BusinessLayer.Concrete
             _CustomerDAL = customerDAL;
         }
 
+        public List<Customer> GetCustomersListWithJob()
+        {
+            return _CustomerDAL.GetCustomerListWithJob();
+        }
+
         public void TDelete(Customer t)
         {
             _CustomerDAL.Delete(t);

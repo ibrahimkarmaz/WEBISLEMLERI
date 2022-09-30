@@ -1,0 +1,18 @@
+﻿@model EntitiyLayer.Concrete.Job
+@{
+    ViewData["Title"] = "UpdateJob";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+
+
+<<form asp-controller="Job" asp-action="UpdateJob" method="post">
+    <label asp-for="JobID" class="form-control">ID:</label>
+    <input asp-for="JobID" class="form-control" />
+
+    <label asp-for="Name" class="form-control">ÜRÜN ADI:</label>
+    <input asp-for="Name" class="form-control" />
+
+    <button type="submit" class="btn btn-outline-success">DÜZENLE</button>
+</form>
+
+

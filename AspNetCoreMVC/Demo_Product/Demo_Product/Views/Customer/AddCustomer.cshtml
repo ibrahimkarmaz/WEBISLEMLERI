@@ -11,5 +11,7 @@
     <label asp-for="City" class="form-control">ŞEHİR:</label>
     <input asp-for="City" class="form-control" />
 
+    <select asp-for="JobID" asp-items=@ViewBag.v class="form-control">MESLEK SEÇİNİZ...</select>
+
     <button type="submit" class="btn btn-outline-primary">MÜŞTERİ EKLE</button>
 </form>

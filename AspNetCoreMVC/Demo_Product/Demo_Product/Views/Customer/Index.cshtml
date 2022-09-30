@@ -9,6 +9,7 @@
         <th>#</th>
         <th>MÜŞTERİ ADI</th>
         <th>ŞEHİR</th>
+        <th>MESLEK</th>
         <th>SİL</th>
         <th>GÜNCELLE</th>
     </tr>
@@ -18,6 +19,7 @@
             <td>@item.ID</td>
             <td>@item.Name</td>
             <td>@item.City</td>
+            <td>@item.Job.Name</td>
             <td><a asp-controller="Customer" asp-action="DeleteCustomer" asp-route-id=@item.ID class="btn btn-outline-danger">SİL</a></td>
             <td><a asp-controller="Customer" asp-action="UpdateCustomer" asp-route-id=@item.ID class="btn btn-outline-success">DÜZENLE</a></td>
         </tr>

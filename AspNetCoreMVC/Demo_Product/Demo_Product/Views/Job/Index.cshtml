@@ -1,0 +1,28 @@
+﻿@model List<EntitiyLayer.Concrete.Job>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>MESLEK ADI</th>
+        <th>SİL</th>
+        <th>GÜNCELLE</th>
+        <th>DETAYLAR</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.JobID</td>
+            <td>@item.Name</td>
+            <td><a asp-controller="Job" asp-action="DeleteJob" asp-route-id=@item.JobID class="btn btn-outline-danger">SİL</a></td>
+            <td><a asp-controller="Job" asp-action="UpdateJob" asp-route-id=@item.JobID class="btn btn-outline-success">DÜZENLE</a></td>
+            <td><a asp-controller="Job" asp-action="DetaisJob" asp-route-id=@item.JobID class="btn btn-outline-success">DETAYLAR</a></td>
+        </tr>
+    }
+</table>
+
+<a asp-controller="Job" asp-action="AddJob" class="btn btn-outline-success">YENİ MESLEK</a>
