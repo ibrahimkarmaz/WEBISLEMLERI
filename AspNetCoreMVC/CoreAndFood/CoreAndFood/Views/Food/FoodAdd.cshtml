@@ -21,7 +21,7 @@
     <input class="form-control" asp-for="ImageURL" />
 
     <label class="form-control text-uppercase" asp-for="CategoryID">Stock:</label>
-    <select asp-for="CategoryID"></select>
+    <select class="form-control" asp-for="CategoryID" asp-items=@ViewBag.v1></select>
 
     <button type="submit" class="btn btn-outline-primary">SAVE</button>
 </form>

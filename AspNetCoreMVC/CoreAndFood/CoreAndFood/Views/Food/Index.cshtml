@@ -1,10 +1,14 @@
-﻿@model List<CoreAndFood.Data.Models.Food>
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+@using X.PagedList.Web.Common
+
+@model IPagedList<CoreAndFood.Data.Models.Food>
 @{
     ViewData["Title"] = "Index";
 }
 
 <h2>Category Liste</h2>
-<table class="table table-bordered">
+<table id="example" class="table table-bordered">
     <thead>
         >
         <tr>
@@ -22,18 +26,32 @@
         @foreach (var item in Model)
         {
             <tr>
-                <td>@item.CategoryID</td>
+                <td>@item.ID</td>
                 <td>@item.Name</td>
                 <td>@item.Price</td>
                 <td>@item.Stock</td>
                 <td>@item.Category.CategoryName</td>
-                <td><a href="#" class="btn btn-danger d-block">DELETE</a></td>
-                <td><a href="#" class="btn btn-success d-block">UPDATE</a></td>
+                <td><a asp-controller="Food" asp-action="FoodDelete" asp-route-id=@item.ID class="btn btn-danger d-block">DELETE</a></td>
+                <td><a asp-controller="Food" asp-action="FoodUpdate" asp-route-id=@item.ID class ="btn btn-success d-block">UPDATE</a></td>
                 <td><a href="#" class="btn btn-info d-block">DETAILS</a></td>
             </tr>
         }
     </tbody>
 </table>
+
 <a asp-controller="Food" asp-action="FoodAdd" class="btn btn-primary">NEW FOOD</a><
+<div class="pull-right">
+                @Html.PagedListPager((IPagedList)Model, page => Url.Action("Index",
+                   new
+                        {
+                            page                
 
+                 }),
+                 new PagedListRenderOptionsBase
+                 {
+                     LiElementClasses = new string[] { "page-item" },
+                     PageClasses = new string[] { "page-link" },
+                     Display = PagedListDisplayMode.IfNeeded
 
+                      })
+            </div>

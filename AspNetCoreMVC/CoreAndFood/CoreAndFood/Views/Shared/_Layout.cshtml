@@ -64,21 +64,27 @@ body {font-family: "Lato", sans-serif;}
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Navbar brand -->
                 <a class="navbar-brand mt-2 mt-lg-0" href="#">
-                    <img src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+                    <img src="https://avatars.githubusercontent.com/u/107946057?s=400&u=91130c67c66643fb7339176f72fd1263267deecc&v=4"
                          height="15"
-                         alt="MDB Logo"
+                         alt="logo"
                          loading="lazy" />
                 </a>
                 <!-- Left links -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
+                    <li class="nav-item my-2 p-2">
                         <a asp-controller="Category" asp-action="Index">Category</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item my-2 p-2">
                         <a asp-controller="Food" asp-action="Index">Food</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                    <li class="nav-item my-2 p-2">
+                        <a asp-controller="Food" asp-action="Index">Google Chart(ÇALIŞMIYOR)</a>
+                    </li>
+                     <li class="nav-item my-2 p-2">
+                        <a asp-controller="Food" asp-action="Index">Popup(ÇALIŞMIYOR)</a>
+                    </li>
+                     <li class="nav-item my-2 p-2">
+                        <a asp-controller="Chart" asp-action="Statictics">Statictics</a>
                     </li>
                 </ul>
                 <!-- Left links -->
@@ -115,32 +121,6 @@ body {font-family: "Lato", sans-serif;}
                         </li>
                     </ul>
                 </div>
-                <!-- Avatar -->
-                <div class="dropdown">
-                    <a class="dropdown-toggle d-flex align-items-center hidden-arrow"
-                       href="#"
-                       id="navbarDropdownMenuAvatar"
-                       role="button"
-                       data-mdb-toggle="dropdown"
-                       aria-expanded="false">
-                        <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-                             class="rounded-circle"
-                             height="25"
-                             alt="Black and White Portrait of a Man"
-                             loading="lazy" />
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end"
-                        aria-labelledby="navbarDropdownMenuAvatar">
-                        <li>
-                            <a class="dropdown-item" href="#">My profile</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">Settings</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">Logout</a>
-                        </li>
-                    </ul>
                 </div>
             </div>
             <!-- Right elements -->
@@ -156,6 +136,13 @@ body {font-family: "Lato", sans-serif;}
 	<link href="~/lib/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="~/lib/twitter-bootstrap/css/bootstrap.rtl.css" rel="stylesheet" />
 	<link href="~/lib/twitter-bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet" />
+	<script src="~/lib/twitter-bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="~/lib/twitter-bootstrap/js/bootstrap.bundle.js"></script>
+	<script src="~/lib/twitter-bootstrap/js/bootstrap.esm.min.js"></script>
+	<script src="~/lib/twitter-bootstrap/js/bootstrap.esm.js"></script>
+	<script src="~/lib/twitter-bootstrap/js/bootstrap.min.js"></script>
+	<script src="~/lib/twitter-bootstrap/js/bootstrap.js"></script>
+
 
 </body>
 </html> 

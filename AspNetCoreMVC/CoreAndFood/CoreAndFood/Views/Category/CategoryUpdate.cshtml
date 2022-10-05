@@ -1,0 +1,19 @@
+﻿@model CoreAndFood.Data.Models.Category
+@{
+    ViewData["Title"] = "CategoryAdd";
+}
+
+<form asp-controller="Category" asp-action="CategoryUpdate" method="post">
+
+    <label class="form-control" asp-for="CategoryID">CATEGORY ID:</label>
+    <input class="form-control" asp-for="CategoryID" />
+
+    <label class="form-control" asp-for="CategoryName">CATEGORY NAME:</label>
+    <input class="form-control" asp-for="CategoryName" />
+    <span asp-validation-for="CategoryName"></span>
+
+    <label class="form-control" asp-for="CategoryDescription">CATEGORY DESCRIPTION:</label>
+    <input class="form-control" asp-for="CategoryDescription" />
+
+    <button class="btn btn-primary" type="submit">UPDATE</button>
+</form>

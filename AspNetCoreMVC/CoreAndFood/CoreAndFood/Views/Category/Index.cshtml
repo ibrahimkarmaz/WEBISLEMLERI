@@ -19,8 +19,8 @@
             <tr>
                 <td>@item.CategoryID</td>
                 <td>@item.CategoryName</td>
-                <td><a href="#" class="btn btn-danger">DELETE</a></td>
-                <td><a href="#" class="btn btn-success">UPDATE</a></td>
+                <td><a asp-controller="Category" asp-action="CategoryDelete" asp-route-id=@item.CategoryID class="btn btn-danger">DELETE</a></td>
+                <td><a asp-controller="Category" asp-action="CategoryUpdate" asp-route-id=@item.CategoryID class="btn btn-success">UPDATE</a></td>
             </tr>
         }
     </tbody>

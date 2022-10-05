@@ -1,0 +1,25 @@
+﻿@model CoreAndFood.Data.Models.Food
+
+<form asp-controller="Food" asp-action="FoodUpdate" method="post">
+    <label class="form-control" asp-for="Name">FOOD NAME:</label>
+    <input class="form-control" asp-for="Name" />
+
+    <label class="form-control text-uppercase" asp-for="Stock">Stock:</label>
+    <input class="form-control" asp-for="Stock" />
+
+
+    <label class="form-control text-uppercase" asp-for="Price">Price:</label>
+    <input class="form-control" asp-for="Price" />
+
+    <label class="form-control text-uppercase" asp-for="Description">Description:</label>
+    <input class="form-control" asp-for="Description" />
+
+    <label class="form-control text-uppercase" asp-for="ImageURL">IMAGE:</label>
+    <input class="form-control" asp-for="ImageURL" />
+
+    <label class="form-control text-uppercase" asp-for="CategoryID">Stock:</label>
+    <select class="form-control" asp-for="CategoryID" asp-items=@ViewBag.v1></select>
+
+    <button type="submit" class="btn btn-outline-primary">UPDATE</button>
+</form>
+
