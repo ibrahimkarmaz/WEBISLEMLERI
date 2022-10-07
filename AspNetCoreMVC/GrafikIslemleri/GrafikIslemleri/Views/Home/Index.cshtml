@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<div>
+    <h2>dsdas</h2>
+    <canvas id="chart" width="300" height="200"></canvas>
+
+    <script>
+        var chart=document.getElementById("chart").getContext('2d');
+        
+        var MyChart=new Chart(chart,{
+            type:'doughnut',
+            data:{
+                labels:['Ocak','Şubat','Mart','Nisan','Mayıs','Haziran'],
+                datasets:[{
+                    label:"6 AYLIK PLAN",
+                    data:[100,123,85,150,28,74],
+                    backgroundColor:[
+                        '#123edf',
+                        '#ee345d',
+                        '#4eeda1',
+                        '#123edf',
+                        '#ee345d',
+                        '#4eeda1'
+                    
+                    ],
+                    borderColor:[
+                    '#000000']
+
+                },
+                {
+                    label: "6 AYLIK PLAN",
+                    data: [130, 143, 75, 110, 68, 94]
+                }]
+            }
+        })
+    </script>
+</div>
+
+<!--
+    type:
+    line,
+    bar
+    doughnut
+
+-->
+
