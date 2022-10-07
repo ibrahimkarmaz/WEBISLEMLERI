@@ -161,3 +161,4 @@ C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CoreAndF
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CoreAndFood\CoreAndFood\obj\Debug\net5.0\Razor\Views\Default\Components\CategoryGetList\Default.cshtml.g.cs
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CoreAndFood\CoreAndFood\obj\Debug\net5.0\Razor\Views\Default\Components\FoodGetList\Default.cshtml.g.cs
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CoreAndFood\CoreAndFood\obj\Debug\net5.0\Razor\Views\Default\CategoryDetails.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CoreAndFood\CoreAndFood\obj\Debug\net5.0\Razor\Views\Chart\Index5.cshtml.g.cs

@@ -1,5 +1,7 @@
 ﻿using CoreAndFood.Data;
 using CoreAndFood.Data.Models;
+using CoreAndFood.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.Collections.Generic;
@@ -47,13 +49,13 @@ namespace CoreAndFood.Controllers
             var deger2 = context.Categorys.Count();
             ViewBag.d2 = deger2;
 
-            var deger3 = context.Foods.Where(x=>x.CategoryID==(context.Categorys.Where(a=>a.CategoryName=="Fruit").First().CategoryID)).Count();
+            var deger3 = context.Foods.Where(x => x.CategoryID == (context.Categorys.Where(a => a.CategoryName == "Fruit").First().CategoryID)).Count();
             ViewBag.d3 = deger3;
 
-            var deger4 = context.Foods.Count(x=>x.CategoryID== (context.Categorys.Where(a => a.CategoryName == "Vegetables").First().CategoryID));
+            var deger4 = context.Foods.Count(x => x.CategoryID == (context.Categorys.Where(a => a.CategoryName == "Vegetables").First().CategoryID));
             ViewBag.d4 = deger4;
 
-            var deger5 = context.Foods.Sum(x=>x.Stock);
+            var deger5 = context.Foods.Sum(x => x.Stock);
             ViewBag.d5 = deger5;
 
             var deger6 = context.Foods.Count(x => x.CategoryID == (context.Categorys.Where(a => a.CategoryName.ToLower() == "Lagumes".ToLower()).First().CategoryID));
@@ -74,5 +76,13 @@ namespace CoreAndFood.Controllers
 
             return View();
         }
+        [AllowAnonymous]
+        public IActionResult Index5()
+        {
+            FoodRepository _foodRepository = new FoodRepository();
+           var values=_foodRepository.TList();
+            return View(values);
+        }
+
     }
 }
