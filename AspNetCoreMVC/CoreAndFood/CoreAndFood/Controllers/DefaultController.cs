@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using CoreAndFood.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CoreAndFood.Controllers
@@ -11,8 +12,10 @@ namespace CoreAndFood.Controllers
 			return View();
 		}
 		[AllowAnonymous]
-		public IActionResult CategoryDetails()
+		public IActionResult CategoryDetails(int id)
 		{
+			
+
 			return View();
 		}
 	}

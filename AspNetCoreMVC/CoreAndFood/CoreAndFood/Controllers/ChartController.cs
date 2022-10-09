@@ -40,9 +40,9 @@ namespace CoreAndFood.Controllers
             });
             return cs;
         }
-
+        Context context = new Context();
         public IActionResult Statictics()
-        { Context context = new Context();
+        { 
             var deger1 = context.Foods.Count();
             ViewBag.d1 = deger1;
 
@@ -79,9 +79,15 @@ namespace CoreAndFood.Controllers
         [AllowAnonymous]
         public IActionResult Index5()
         {
-            FoodRepository _foodRepository = new FoodRepository();
-           var values=_foodRepository.TList();
-            return View(values);
+
+           var valuesList = (from x in context.Foods
+                                       select new
+                                       {
+                                           x.Name
+                                       }).ToList();
+
+            ViewBag.text = valuesList;
+            return View();
         }
 
     }

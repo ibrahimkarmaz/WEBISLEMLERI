@@ -10,84 +10,74 @@
 
 
 <!--Chart.js kodlarında dışarıdan veri alırken sorun var ....-->
-
-
-
-
-
-
-
-@model List<CoreAndFood.Data.Models.Food>
 @{
-    ViewData["Title"] = "Index5";
+    ViewData["Title"] = "Home Page";
 }
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-@{
-    List<string> a = new List<string>();
-    List<int> b = new List<int>();
-    foreach (var item in Model)
-    {
-        a.Add(item.Name);
-        b.Add(item.Stock);
-    }
-}
-
-<canvas id="chart" width="300" height="200"></canvas>
-
 <div>
-    <script type="text/javascript">
-        var ar = @Html.Raw(Json.Serialize(Model.));
-    </script>
+    <h2>dsdas</h2>
+    <canvas id="chart" width="300" height="200"></canvas>
 
-<script>
+    <script>
         var chart = document.getElementById("chart").getContext('2d');
-
-
-        
-
-        var dizi = []
-
-        function DataParse() {
-            var model = JSON.parse('@Html.Raw(a)');
-            var data = JSON.parse(model);
-            dizi=data
-        }
-        DataParse()
-        alert(dizi)
-        var renkler = [];
-
-        var colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6',
-            '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D',
-            '#80B300', '#809900', '#E6B3B3', '#6680B3', '#66991A',
-            '#FF99E6', '#CCFF1A', '#FF1A66', '#E6331A', '#33FFCC',
-            '#66994D', '#B366CC', '#4D8000', '#B33300', '#CC80CC',
-            '#66664D', '#991AFF', '#E666FF', '#4DB3FF', '#1AB399',
-            '#E666B3', '#33991A', '#CC9999', '#B3B31A', '#00E680',
-            '#4D8066', '#809980', '#E6FF80', '#1AFF33', '#999933',
-            '#FF3380', '#CCCC00', '#66E64D', '#4D80CC', '#9900B3',
-            '#E64D66', '#4DB380', '#FF4D4D', '#99E6E6', '#6666FF'];
-        dizi.forEach(function(){
-            var donenDeger = colorArray[Math.floor(Math.random() * (colorArray.length - 0)) + 0]
-            if (renkler.indexOf(donenDeger)==-1)
-            {
-                renkler.push(donenDeger);
-            }
-        })
-
 
         var MyChart = new Chart(chart, {
             type: 'doughnut',
             data: {
-                labels: dizi,
+                labels: ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran'],
                 datasets: [{
                     label: "6 AYLIK PLAN",
                     data: [100, 123, 85, 150, 28, 74],
-                    backgroundColor: renkler,
+                    backgroundColor: [
+                        '#123edf',
+                        '#ee345d',
+                        '#4eeda1',
+                        '#123edf',
+                        '#ee345d',
+                        '#4eeda1'
+
+                    ],
                     borderColor: [
                         '#000000']
+
                 }]
             }
         })
-</script>
+    </script>
 </div>
+
+<!--
+    type:
+    line,
+    bar
+    doughnut
+
+-->
+<!--
+    type:
+    line,
+    bar
+    doughnut
+-->
+<!--
+     var renkler = [];
+
+var colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6',
+    '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D',
+    '#80B300', '#809900', '#E6B3B3', '#6680B3', '#66991A',
+    '#FF99E6', '#CCFF1A', '#FF1A66', '#E6331A', '#33FFCC',
+    '#66994D', '#B366CC', '#4D8000', '#B33300', '#CC80CC',
+    '#66664D', '#991AFF', '#E666FF', '#4DB3FF', '#1AB399',
+    '#E666B3', '#33991A', '#CC9999', '#B3B31A', '#00E680',
+    '#4D8066', '#809980', '#E6FF80', '#1AFF33', '#999933',
+    '#FF3380', '#CCCC00', '#66E64D', '#4D80CC', '#9900B3',
+    '#E64D66', '#4DB380', '#FF4D4D', '#99E6E6', '#6666FF'];
+dizi.forEach(function(){
+    var donenDeger = colorArray[Math.floor(Math.random() * (colorArray.length - 0)) + 0]
+    if (renkler.indexOf(donenDeger)==-1)
+    {
+        renkler.push(donenDeger);
+    }
+})
+        -->

@@ -1,9 +1,9 @@
-﻿@model CoreAndFood.Data.Models.Food
+﻿@model CoreAndFood.Data.Models.urunekle
 @{
     ViewData["Title"] = "FoodAdd";
 }
-
-<form asp-controller="Food" asp-action="FoodAdd" method="post">
+<!--FORM KISMINA DİKKAT EKLENEN-->
+<form asp-controller="Food" asp-action="FoodAdd" method="post" enctype="multipart/form-data">
     <label class="form-control" asp-for="Name">FOOD NAME:</label>
     <input class="form-control" asp-for="Name" />
 
@@ -18,7 +18,8 @@
     <input class="form-control" asp-for="Description" />
 
     <label class="form-control text-uppercase" asp-for="ImageURL">IMAGE:</label>
-    <input class="form-control" asp-for="ImageURL" />
+    <input type="file" asp-for="ImageURL"/>
+   <!-- <input class="form-control" asp-for="ImageURL" />-->
 
     <label class="form-control text-uppercase" asp-for="CategoryID">Stock:</label>
     <select class="form-control" asp-for="CategoryID" asp-items=@ViewBag.v1></select>
