@@ -1,8 +1,8 @@
 ﻿using BusinessLayer.Abstract;
+using DataAccessLayer.Abstract;
 using DataAccessLayer.EntityFramework;
 using DataAccessLayer.Repositories;
 using EntityLayer.Concrete;
-using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,36 +13,36 @@ namespace BusinessLayer.Concrete
 {
     public class CategoryManager : ICategoryService
     {
-        EFCategoryRepository _efCategoryRepository;
+        ICategoryDAL _categoryDAL;
 
-        public CategoryManager()
+        public CategoryManager(ICategoryDAL categoryDAL)
         {
-            _efCategoryRepository = new EFCategoryRepository();
+            _categoryDAL = categoryDAL;
         }
 
         public void CategoryAdd(Category category)
         {
-            _efCategoryRepository.Insert(category);
+            _categoryDAL.Insert(category);
         }
 
         public void CategoryDelete(Category category)
         {
-            _efCategoryRepository.Delete(category);
+            _categoryDAL.Delete(category);
         }
 
         public void CategoryUpdate(Category category)
         {
-            _efCategoryRepository.Update(category);
+            _categoryDAL.Update(category);
         }
 
         public Category GetById(int id)
         {
-            return _efCategoryRepository.GetById(id);
+            return _categoryDAL.GetById(id);
         }
 
         public List<Category> GetList()
         {
-            return _efCategoryRepository.GetListAll();
+            return _categoryDAL.GetListAll();
         }
     }
 }
