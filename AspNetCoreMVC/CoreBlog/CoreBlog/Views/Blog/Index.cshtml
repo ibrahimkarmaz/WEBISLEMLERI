@@ -21,7 +21,7 @@
 							<ul class="blog-icons my-4">
 								<li>
 									<a href="#">
-										<i class="far fa-calendar-alt"></i> @item.BlogCreateDate
+										<i class="far fa-calendar-alt"></i> @(((DateTime)item.BlogCreateDate).ToString("dd-MMM-yyyy"))
 									</a>
 								</li>
 								<li class="mx-2">
@@ -31,7 +31,7 @@
 								</li>
 								<li>
 									<a href="#">
-										<i class="fas fa-eye"></i> @item.CategoryID
+										<i class="fas fa-eye"></i> @item.Category.CategoryName
 									</a>
 								</li>
 
@@ -39,8 +39,10 @@
 							<h5 class="card-title">
 								<a href="#">@item.BlogTitle</a>
 							</h5>
-							<p class="card-text mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit sedc dnmo eiusmod tempor incididunt.. </p>
-								<a href="#" class="btn btn-outline-primary rounded-3 d-block">
+							<p class="card-text mb-3">
+									@(item.BlogContent.Length > 150 ? item.BlogContent.Substring(0, item.BlogContent.Substring(0, 155).LastIndexOf(" ")) + "..." : item.BlogContent + "...")
+							</p>
+								<a asp-controller="Blog" asp-action="BlogDetails" asp-route-id=@item.BlogID class="btn btn-outline-primary rounded-3 d-block">
 									Devamını Oku <i class="bi bi-book-fill"></i>
 								</a>
 						</div>
