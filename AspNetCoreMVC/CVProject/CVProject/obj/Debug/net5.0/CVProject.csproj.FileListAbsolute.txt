@@ -118,3 +118,4 @@ C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CVProjec
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CVProject\CVProject\obj\Debug\net5.0\CVProject.pdb
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CVProject\CVProject\obj\Debug\net5.0\CVProject.genruntimeconfig.cache
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CVProject\CVProject\obj\Debug\net5.0\ref\CVProject.dll
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CVProject\CVProject\obj\Debug\net5.0\Razor\Views\Default\BlogHome.cshtml.g.cs

@@ -42,7 +42,7 @@
 							<p class="card-text mb-3">
 									@(item.BlogContent.Length > 150 ? item.BlogContent.Substring(0, item.BlogContent.Substring(0, 155).LastIndexOf(" ")) + "..." : item.BlogContent + "...")
 							</p>
-								<a asp-controller="Blog" asp-action="BlogDetails" asp-route-id=@item.BlogID class="btn btn-outline-primary rounded-3 d-block">
+								<a asp-controller="Blog" asp-action="BlogReadAll" asp-route-id=@item.BlogID class="btn btn-outline-primary rounded-3 d-block">
 									Devamını Oku <i class="bi bi-book-fill"></i>
 								</a>
 						</div>

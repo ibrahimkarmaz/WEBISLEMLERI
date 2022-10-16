@@ -14,7 +14,8 @@ namespace CoreBlog.Controllers
         }
         public IActionResult BlogReadAll(int id)
         {
-            return View();
+            var values = _blogManager.GetBlogByID(id);
+            return View(values);
         }
     }
 }

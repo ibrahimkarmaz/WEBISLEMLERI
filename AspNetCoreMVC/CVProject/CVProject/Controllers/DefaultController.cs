@@ -12,5 +12,9 @@ namespace CVProject.Controllers
         {
             return View();
         }
+        public IActionResult BlogHome()
+        {
+            return View();
+        }
     }
 }
