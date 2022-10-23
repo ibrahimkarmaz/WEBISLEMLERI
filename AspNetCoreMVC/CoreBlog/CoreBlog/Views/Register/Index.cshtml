@@ -1,0 +1,49 @@
+﻿@model EntityLayer.Concrete.Writer;
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<section class="main-content-w3layouts-agileits">
+	<div class="container">
+		<h3 class="tittle">KAYIT OL</h3>
+		<div class="inner-sec">
+			<div class="login p-5 bg-light mx-auto mw-100">
+				<form action="#" method="post">
+					<div class="form-row">
+						<div class="col-md-6 mb-3">
+							<label asp-for="WriterName">ADINIZ VE SOYADINIZ:</label>
+							<input asp-for="WriterName" type="text" class="form-control" id="validationDefault01" placeholder="ADINIZI VE SOYADINIZI GİRİNİZ" required="">
+						</div>
+						<div class="col-md-6 mb-3">
+							<label asp-for="WriterMail" for="validationCustom02">MAİL ADRESİ:</label>
+							<input asp-for="WriterMail" type="email" class="form-control" id="validationDefault02" placeholder="" required="">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label asp-for="WriterPassword" for="exampleInputPassword1 mb-2">PAROLA:</label>
+							<input asp-for="WriterPassword"  type="password" class="form-control" id="password1" placeholder="" required="">
+						</div>
+						<!--BURASI KONTROL EDİLECEK...-->
+						<div class="form-group col-md-6">
+							<label  for="exampleInputPassword2 mb-2">TEKRAR PAROLA:</label>
+							<input type="password" class="form-control" id="password2" placeholder="" required="">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="col">
+							<label asp-for="WriteImage">GÖRSEL DOSYA YOLU:</label>
+							<input asp-for="WriteImage" type="text" class="form-control" id="validationDefault01" placeholder="" required="">
+						</div>
+					</div>
+					<button type="submit" class="btn btn-primary submit mb-4 mt-4">KAYIT OL</button>
+					<p>
+						<a href="#">Tüm Şartları okudum,Kabul ediyorum.</a>
+					</p>
+				</form>
+
+			</div>
+		</div>
+	</div>
+</section>
