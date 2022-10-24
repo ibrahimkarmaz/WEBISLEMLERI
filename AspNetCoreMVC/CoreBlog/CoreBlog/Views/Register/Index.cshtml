@@ -3,27 +3,34 @@
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_UserLayout.cshtml";
 }
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.js"></script>
 
 <section class="main-content-w3layouts-agileits">
 	<div class="container">
 		<h3 class="tittle">KAYIT OL</h3>
 		<div class="inner-sec">
 			<div class="login p-5 bg-light mx-auto mw-100">
-				<form action="#" method="post">
+				<form asp-controller="Register" asp-action="Index" method="post">
 					<div class="form-row">
 						<div class="col-md-6 mb-3">
 							<label asp-for="WriterName">ADINIZ VE SOYADINIZ:</label>
 							<input asp-for="WriterName" type="text" class="form-control" id="validationDefault01" placeholder="ADINIZI VE SOYADINIZI GİRİNİZ" required="">
+							<span asp-validation-for="WriterName"></span>
 						</div>
 						<div class="col-md-6 mb-3">
 							<label asp-for="WriterMail" for="validationCustom02">MAİL ADRESİ:</label>
 							<input asp-for="WriterMail" type="email" class="form-control" id="validationDefault02" placeholder="" required="">
+							<span asp-validation-for="WriterMail"></span>
+
 						</div>
 					</div>
 					<div class="form-row">
 						<div class="form-group col-md-6">
 							<label asp-for="WriterPassword" for="exampleInputPassword1 mb-2">PAROLA:</label>
 							<input asp-for="WriterPassword"  type="password" class="form-control" id="password1" placeholder="" required="">
+							<span asp-validation-for="WriterPassword"></span>
 						</div>
 						<!--BURASI KONTROL EDİLECEK...-->
 						<div class="form-group col-md-6">
@@ -35,15 +42,23 @@
 						<div class="col">
 							<label asp-for="WriteImage">GÖRSEL DOSYA YOLU:</label>
 							<input asp-for="WriteImage" type="text" class="form-control" id="validationDefault01" placeholder="" required="">
+							<span asp-validation-for="WriteImage"></span>
+
 						</div>
 					</div>
 					<button type="submit" class="btn btn-primary submit mb-4 mt-4">KAYIT OL</button>
 					<p>
-						<a href="#">Tüm Şartları okudum,Kabul ediyorum.</a>
+						<a id="btn1">Tüm Şartları okudum,Kabul ediyorum.</a>
 					</p>
 				</form>
 
 			</div>
 		</div>
 	</div>
+	<br /> 
+	<script>
+		$('#btn1').click(function(){
+			swal("Sitemizde Verdiğiniz Mail Adresi Üzerinden Bilgi ve Haber E-Postaları Spam Ölçüsüne varmadan gönderilmeye devam edilecektir. Eğer E Posta Bülteninden çıkmam isterseniz Mail ileti dizisini durdurabilirizsiniz. Şifre Ve Mail Adresleriniz Şifrekenmiştir. Herhangi bir kullanıcı ulaşamaz.");
+		});
+	</script>
 </section>
