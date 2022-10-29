@@ -17,7 +17,7 @@
 						<div class="col-md-6 mb-3">
 							<label asp-for="WriterName">ADINIZ VE SOYADINIZ:</label>
 							<input asp-for="WriterName" type="text" class="form-control" id="validationDefault01" placeholder="ADINIZI VE SOYADINIZI GİRİNİZ" required="">
-							<span asp-validation-for="WriterName"></span>
+							<span asp-validation-for="WriterName" class="text-danger"></span>
 						</div>
 						<div class="col-md-6 mb-3">
 							<label asp-for="WriterMail" for="validationCustom02">MAİL ADRESİ:</label>
@@ -30,7 +30,7 @@
 						<div class="form-group col-md-6">
 							<label asp-for="WriterPassword" for="exampleInputPassword1 mb-2">PAROLA:</label>
 							<input asp-for="WriterPassword"  type="password" class="form-control" id="password1" placeholder="" required="">
-							<span asp-validation-for="WriterPassword"></span>
+							<span asp-validation-for="WriterPassword" class="text-danger"></span>
 						</div>
 						<!--BURASI KONTROL EDİLECEK...-->
 						<div class="form-group col-md-6">
@@ -42,7 +42,7 @@
 						<div class="col">
 							<label asp-for="WriteImage">GÖRSEL DOSYA YOLU:</label>
 							<input asp-for="WriteImage" type="text" class="form-control" id="validationDefault01" placeholder="" required="">
-							<span asp-validation-for="WriteImage"></span>
+							<span asp-validation-for="WriteImage" class="text-danger"></span>
 
 						</div>
 					</div>
@@ -58,7 +58,7 @@
 	<br /> 
 	<script>
 		$('#btn1').click(function(){
-			swal("Sitemizde Verdiğiniz Mail Adresi Üzerinden Bilgi ve Haber E-Postaları Spam Ölçüsüne varmadan gönderilmeye devam edilecektir. Eğer E Posta Bülteninden çıkmam isterseniz Mail ileti dizisini durdurabilirizsiniz. Şifre Ve Mail Adresleriniz Şifrekenmiştir. Herhangi bir kullanıcı ulaşamaz.");
+			swal("SİTE KABUL ŞARTLARI","Sitemizde Verdiğiniz Mail Adresi Üzerinden Bilgi ve Haber E-Postaları Spam Ölçüsüne varmadan gönderilmeye devam edilecektir. Eğer E Posta Bülteninden çıkmam isterseniz Mail ileti dizisini durdurabilirizsiniz. Şifre Ve Mail Adresleriniz Şifrekenmiştir. Herhangi bir kullanıcı ulaşamaz.");
 		});
 	</script>
 </section>
