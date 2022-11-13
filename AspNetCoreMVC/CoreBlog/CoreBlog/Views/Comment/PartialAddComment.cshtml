@@ -1,13 +1,14 @@
-﻿<div class="comment-top">
+﻿@model EntityLayer.Concrete.Comment
+<div class="comment-top">
 	<h4>Bir Yorum Yapın</h4>
 	<div class="comment-bottom">
-		<form action="#" method="post">
-			<input class="form-control" type="text" name="Name" placeholder="Name" required="">
-			<input class="form-control" type="email" name="Email" placeholder="Email" required="">
+		<form asp-controller="Comment" asp-action="PartialAddComment" method="post">
+			<input class="form-control" type="text" asp-for="CommentUserName" placeholder="ADI" required="">
+			<input class="form-control" type="email" asp-for="CommentTitle"  placeholder="E-Mail:" required="">
 
-			<input class="form-control" type="text" name="Subject" placeholder="Subject" required="">
-
-			<textarea class="form-control" name="Message" placeholder="Message..." required=""></textarea>
+		<!--	<input class="form-control" type="text" asp-for="CommentContent" placeholder="Yorumunuz" required="">
+				-->
+			<textarea class="form-control" asp-for="CommentContent" placeholder="Yorumunuz..." required=""></textarea>
 			<button type="submit" class="btn btn-primary submit">Submit</button>
 		</form>
 	</div>

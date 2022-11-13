@@ -1,0 +1,9 @@
+﻿@model EntityLayer.Concrete.NewsLetter
+<div class="tech-btm">
+	<h4>Mail Bültenine Abone Olun</h4>
+	<p>Teknoloji Yazılım ve Diğer bloglarınızı mail ile alın. </p>
+	<form asp-controller="NewsLetter" asp-action="SubscribeMail" method="post">
+		<input type="email" placeholder="Mail Adresini Giriniz" asp-for="Mail">
+		<input type="submit" value="ABONE OLUN">
+	</form>
+</div>

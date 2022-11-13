@@ -56,7 +56,7 @@
 				@await Component.InvokeAsync("CommentListByBlog",new {id=idBilgisi})
 
 				@*await Html.PartialAsync("~/Views/Comment/CommentListByBlog.cshtml")*@
-				@await Html.PartialAsync("~/Views/Comment/PartialAddComment.cshtml")
+				@await Html.PartialAsync("~/Views/Comment/PartialAddComment.cshtml",ViewData["data"])
 				</div>
 
 				<!--//left-->
@@ -66,15 +66,12 @@
 						<div class="tech-btm">
 							<img src="~/web/images/banner1.jpg" class="img-fluid" alt="">
 						</div>
-						<div class="tech-btm">
-							<h4>Sign up to our newsletter</h4>
-							<p>Pellentesque dui, non felis. Maecenas male </p>
-							<form action="#" method="post">
-								<input type="email" placeholder="Email" required="">
-								<input type="submit" value="Subscribe">
-							</form>
+						<!--TAG HELPER KULLANDIĞIM İÇİN VİEW'İ GÖNDERMEK GEREKİYOR GÖRDERME ŞEKLİ ViewData İle OLDU
+						--YARDIMCI KAYNAK:
+						http://cagatayyildiz.com/mvc-partial-view-kullanimi/
+						-->
+					@await Html.PartialAsync("~/Views/NewsLetter/SubscribeMail.cshtml",ViewData["Data"])
 
-						</div>
 						@await Component.InvokeAsync("CategoryList")
 
 						@await Component.InvokeAsync("WriterLastBlog")
