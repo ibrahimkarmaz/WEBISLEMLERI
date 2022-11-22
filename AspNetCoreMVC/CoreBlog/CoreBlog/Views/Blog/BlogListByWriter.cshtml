@@ -1,0 +1,36 @@
+﻿@model List<EntityLayer.Concrete.Blog>
+@{
+    ViewData["Title"] = "BlogListByWriter";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+<h1 class="fs-3 fw-bold">Yazarın Blogları</h1>
+
+<table class="table table-dark table-bordered rounded-5">
+    <thead>
+        <tr>
+            <td>#</td>
+            <td>Blog Başlığı</td>
+            <td>Oluşturma Tarihi</td>
+            <td>Kategori</td>
+            <td>Durum</td>
+            <td>Sil</td>
+            <td>Düzenle</td>
+        </tr>
+    </thead>
+    <tbody class="table-hover">
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.BlogID</td>
+                <td>@item.BlogTitle</td>
+                <td>@item.BlogCreateDate</td>
+                <td>@item.CategoryID</td>
+                <td>@(item.BlogStatus ? "AÇIK":"KAPALI")</td>
+                <td> <a href="#" class="btn btn-danger rounded-pill">SİL</a></td>
+                <td> <a href="#" class="btn btn-warning rounded-pill">DÜZENLE</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a asp-controller="blog" asp-action="BlogAdd" class="btn btn-outline-primary rounded-pill m-2">YENİ BLOG OLUŞTUR</a>

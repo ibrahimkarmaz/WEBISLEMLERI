@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-	public class AboutManager : IAboutService
+	public class AboutManager:IAboutService
 	{
 		IAboutDAL _aboutDAL;
 
@@ -18,9 +18,29 @@ namespace BusinessLayer.Concrete
 			_aboutDAL = aboutDAL;
 		}
 
-		public List<About> GetList()
-		{
-			return _aboutDAL.GetListAll();
-		}
-	}
+        public About GetById(int id)
+        {
+            return _aboutDAL.GetById(id);
+        }
+
+        public List<About> GetList()
+        {
+            return _aboutDAL.GetListAll();
+        }
+
+        public void TAdd(About t)
+        {
+            _aboutDAL.Insert(t);
+        }
+
+        public void TDelete(About t)
+        {
+            _aboutDAL.Delete(t);
+        }
+
+        public void TUpdate(About t)
+        {
+            _aboutDAL.Update(t);
+        }
+    }
 }

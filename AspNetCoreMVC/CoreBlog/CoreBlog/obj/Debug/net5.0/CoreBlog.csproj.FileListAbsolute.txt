@@ -180,3 +180,17 @@ C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CoreBlog
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CoreBlog\CoreBlog\obj\Debug\net5.0\Razor\Views\Writer\Index.cshtml.g.cs
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CoreBlog\CoreBlog\obj\Debug\net5.0\Razor\Views\Writer\WriterProfile.cshtml.g.cs
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CoreBlog\CoreBlog\obj\Debug\net5.0\Razor\Views\Writer\WriterMail.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CoreBlog\CoreBlog\obj\Debug\net5.0\staticwebassets\CoreBlog.StaticWebAssets.Pack.cache
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CoreBlog\CoreBlog\obj\Debug\net5.0\staticwebassets\msbuild.CoreBlog.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CoreBlog\CoreBlog\obj\Debug\net5.0\staticwebassets\msbuild.build.CoreBlog.props
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CoreBlog\CoreBlog\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.CoreBlog.props
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CoreBlog\CoreBlog\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.CoreBlog.props
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CoreBlog\CoreBlog\obj\Debug\net5.0\Razor\Views\Shared\Components\BlogLast3Post\Default.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CoreBlog\CoreBlog\obj\Debug\net5.0\Razor\Views\Shared\WriterLayout.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CoreBlog\CoreBlog\obj\Debug\net5.0\Razor\Views\Writer\Test.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CoreBlog\CoreBlog\obj\Debug\net5.0\Razor\Views\Writer\WriterNavbarPartial.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CoreBlog\CoreBlog\obj\Debug\net5.0\Razor\Views\Writer\WriterFooterPartial.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CoreBlog\CoreBlog\obj\Debug\net5.0\Razor\Views\Shared\Components\WriterMessageNotification\Default.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CoreBlog\CoreBlog\obj\Debug\net5.0\Razor\Views\Shared\Components\WriterNotification\Default.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CoreBlog\CoreBlog\obj\Debug\net5.0\Razor\Views\Blog\BlogListByWriter.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CoreBlog\CoreBlog\obj\Debug\net5.0\Razor\Views\Blog\BlogAdd.cshtml.g.cs
