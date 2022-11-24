@@ -3,10 +3,12 @@ using BusinessLayer.ValidatonRules;
 using CoreBlog.Models;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
+using FluentValidation;
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,7 +33,7 @@ namespace CoreBlog.Controllers
 
         public IActionResult BlogListByWriter()
         {
-            var values=_blogManager.GetBlogListByWriter(1);
+            var values=_blogManager.GetListWithCategoryByWriter(1);
             return View(values);
         }
         [HttpGet]
@@ -65,6 +67,50 @@ namespace CoreBlog.Controllers
                 }
             }
             return View();//EĞER HATA VAR İSE YİNE AYNI PENCERE AÇILIR FAKAT WRİTER ALINAN BİLGİYİ GERİ DÖNDÜRÜR.
+        }
+        public IActionResult DeleteBlog(int id)
+        {
+            var blogvalue = _blogManager.GetById(id);
+            _blogManager.TDelete(blogvalue);
+            return RedirectToAction("BlogListByWriter", "Blog");
+        }
+
+        [HttpGet]
+        public IActionResult EditBlog(int id)
+        {
+            var blogvalue = _blogManager.GetById(id);
+            var BlogModel=new BlogModel();
+            BlogModel.Blogs = blogvalue;
+            return View(BlogModel);
+        }
+
+        [HttpPost]
+        public IActionResult EditBlog(BlogModel p)
+        {
+            var blogvalue = _blogManager.GetById(p.Blogs.BlogID);
+           
+            BlogValidator blogValidator = new BlogValidator();
+            ValidationResult result = blogValidator.Validate(p.Blogs);
+            if (result.IsValid)
+            {
+                blogvalue.BlogTitle = p.Blogs.BlogTitle;
+                blogvalue.BlogImage = p.Blogs.BlogImage;
+                blogvalue.BlogThumbnailImage = p.Blogs.BlogThumbnailImage;
+                blogvalue.BlogTitle = p.Blogs.BlogTitle;
+                blogvalue.CategoryID = p.Blogs.CategoryID;
+                blogvalue.BlogContent = p.Blogs.BlogContent;
+
+                _blogManager.TUpdate(blogvalue);
+                return RedirectToAction("BlogListByWriter");
+            }
+            else
+            {
+                foreach (var item in result.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
+            return View(p);
         }
     }
 }

@@ -24,13 +24,55 @@
             <tr>
                 <td>@item.BlogID</td>
                 <td>@item.BlogTitle</td>
-                <td>@item.BlogCreateDate</td>
-                <td>@item.CategoryID</td>
-                <td>@(item.BlogStatus ? "AÇIK":"KAPALI")</td>
-                <td> <a href="#" class="btn btn-danger rounded-pill">SİL</a></td>
-                <td> <a href="#" class="btn btn-warning rounded-pill">DÜZENLE</a></td>
+                <td>@(((DateTime)item.BlogCreateDate).ToString("dd/MMM/yyyy")) </td>
+                <td>@item.Category.CategoryName</td>
+                <td>@if(item.BlogStatus)
+                    {
+                    <span class="badge badge-outline-success">AÇIK</span>
+                    }
+                    else
+                    {
+                        <span class="badge badge-outline-secondary">KAPALI</span>
+                    }
+                </td>
+                <td>
+                   
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-sm btn-danger rounded-pill" data-bs-toggle="modal" data-bs-target="#pModel">
+                        SİL
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal" id="pModel" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog ">
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">BLOG İŞLEMLERİ</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                                </div>
+                                <div class="modal-body">
+                                     BLOG BİLGİLERİ SİLİNECEK EMİN MİSİNİZ ?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-sm btn-secondary rounded-pill" data-bs-dismiss="modal">İPTAL</button>
+                                    <a asp-controller="Blog" asp-action="DeleteBlog" asp-route-id=@item.BlogID class="btn btn-sm btn-danger rounded-pill">SİL</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    </td>
+                <td> <a asp-controller="Blog" asp-action="EditBlog" asp-route-id=@item.BlogID class="btn btn-sm btn-warning rounded-pill">DÜZENLE</a></td>
             </tr>
         }
     </tbody>
 </table>
 <a asp-controller="blog" asp-action="BlogAdd" class="btn btn-outline-primary rounded-pill m-2">YENİ BLOG OLUŞTUR</a>
+
+
+<script src="~/lib/twitter-bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="~/lib/twitter-bootstrap/js/bootstrap.bundle.js"></script>
+<script src="~/lib/twitter-bootstrap/js/bootstrap.esm.min.js"></script>
+<script src="~/lib/twitter-bootstrap/js/bootstrap.esm.js"></script>
+<script src="~/lib/twitter-bootstrap/js/bootstrap.min.js"></script>
+<script src="~/lib/twitter-bootstrap/js/bootstrap.js"></script>

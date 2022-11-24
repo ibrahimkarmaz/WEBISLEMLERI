@@ -1,0 +1,40 @@
+﻿@model BlogModel
+@{
+    ViewData["Title"] = "EditBlog";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+<h1>BLOG DÜZENLEME SAYFASI</h1>
+
+
+<form asp-controller="Blog" asp-action="EditBlog" method="post">
+
+    <label class="form-control text-center">BLOG KODU</label>
+    <input class="form-control" readonly asp-for="Blogs.BlogID" />
+    <hr class="hr hr-blurry" />
+    <label class="form-control text-center">BLOG BAŞLIĞI</label>
+    <input class="form-control" asp-for="Blogs.BlogTitle" />
+    <span asp-validation-for="Blogs.BlogTitle"> </span>
+    <hr class="hr hr-blurry" />
+    <label class="form-control text-center">BLOG GÖRSELİ</label>
+    <input class="form-control" asp-for="Blogs.BlogImage" type="file" />
+    <span asp-validation-for="Blogs.BlogImage"> </span>
+    <hr class="hr hr-blurry" />
+    <label class="form-control text-center">BLOG KÜÇÜK GÖRSELİ</label>
+    <input class="form-control" asp-for="Blogs.BlogImage" type="file" />
+    <span asp-validation-for="Blogs.BlogImage"> </span>
+    <hr class="hr hr-blurry" />
+    <label class="form-control text-center">KATEGORİ</label>
+
+    <select class="form-select form-control" asp-for="Blogs.CategoryID" asp-items="Model.CategoryValues">
+    </select>
+    <span asp-validation-for="Blogs.CategoryID"> </span>
+    <hr class="hr hr-blurry" />
+
+    <label class="form-control text-center">BLOG İÇERİĞİ</label>
+    <textarea class="form-control" rows="20" asp-for="Blogs.BlogContent"></textarea>
+    <span asp-validation-for="Blogs.BlogContent"> </span>
+    <hr class="hr hr-blurry" />
+    <button class="btn btn-outline-info" type="submit">YAZIYI DÜZENLE</button>
+</form>
+
