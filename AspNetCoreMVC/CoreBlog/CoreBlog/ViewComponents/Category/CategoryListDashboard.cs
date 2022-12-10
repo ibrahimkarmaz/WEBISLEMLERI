@@ -11,6 +11,6 @@ namespace CoreBlog.ViewComponents.Category
         {
             var values=_categoryManager.GetList();
             return View(values);
-        }
+        } 
     }
 }
