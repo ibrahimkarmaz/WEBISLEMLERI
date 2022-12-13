@@ -1,0 +1,48 @@
+﻿@model CoreBlog.Models.AddProfileImage;
+@{
+   
+    ViewData["Title"] = "WriterAdd";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+
+<form class="form-group" asp-controller="Writer" asp-action="WriterAdd" method="post" enctype="multipart/form-data">
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Yazar Profil Bilgileri Düzenleme</h4>
+                <br />
+                <form class="forms-sample">
+                    <div class="form-group">
+                        <label for="exampleInputName1">Yazar Kodu</label>
+                        <input asp-for="WriterID" type="text" class="form-control" id="exampleInputName1" placeholder="Yazar Kodu">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputName1">Yazar</label>
+                        <input asp-for="WriterName" type="text" class="form-control" id="exampleInputName1" placeholder="Yazar">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail3">Email address</label>
+                        <input asp-for="WriterMail" type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword4">Parola</label>
+                        <input asp-for="WriterPassword" type="password" class="form-control" placeholder="Parola">
+                    </div>
+                    <div class="form-group">
+                        <label>Profil Resmi</label>
+                       <input  type="file" asp-for="WriteImage"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleTextarea1">Yazar Hakkında</label>
+                        <textarea asp-for="WriterAbout" class="form-control" id="exampleTextarea1" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-gradient-primary mr-2">Düzenle</button>
+                    <button class="btn btn-light">İptal Et</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</form>
+
+

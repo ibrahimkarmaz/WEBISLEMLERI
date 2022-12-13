@@ -4,13 +4,17 @@
     Layout = "~/Views/Shared/WriterLayout.cshtml";
 }
 
-<form asp-controller="Writer" asp-action="WriterEditProfile">
+<form asp-controller="Writer" asp-action="WriterEditProfile" method="post">
     <div class="col-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
                 <h4 class="card-title">Yazar Profil Bilgileri Düzenleme</h4>
                 <br />
                 <form class="forms-sample">
+                    <div class="form-group">
+                        <label for="exampleInputName1">Yazar Kodu</label>
+                        <input asp-for="WriterID" type="text" class="form-control" id="exampleInputName1" placeholder="Yazar Kodu">
+                    </div>
                     <div class="form-group">
                         <label for="exampleInputName1">Yazar</label>
                         <input asp-for="WriterName" type="text" class="form-control" id="exampleInputName1" placeholder="Yazar">
