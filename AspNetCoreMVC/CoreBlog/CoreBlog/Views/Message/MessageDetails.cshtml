@@ -1,0 +1,17 @@
+﻿@model EntityLayer.Concrete.Message2
+@{
+    ViewData["Title"] = "MessageDetails";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+<h1>Mesaj Detayları</h1>
+ <label class="form-control text-center">BLOG KODU</label>
+    <input class="form-control" readonly asp-for="MessageID" />
+
+<label class="form-control text-center">BLOG KODU</label>
+<input class="form-control" readonly asp-for="Subject" />
+
+<label class="form-control text-center">BLOG KODU</label>
+<input class="form-control" readonly asp-for="MessageDetails" />
+<br />
+<button asp-controller="Message" asp-action="InBox" class="btn btn-primary">Mesajlara Dön</button>

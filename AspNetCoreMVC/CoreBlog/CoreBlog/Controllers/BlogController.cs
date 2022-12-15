@@ -1,6 +1,7 @@
 ﻿using BusinessLayer.Concrete;
 using BusinessLayer.ValidatonRules;
 using CoreBlog.Models;
+using DataAccessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using FluentValidation;
@@ -15,7 +16,7 @@ using System.Linq;
 
 namespace CoreBlog.Controllers
 {
-    [AllowAnonymous]
+    
     public class BlogController : Controller
     {
         BlogManager _blogManager = new BlogManager(new EFBlogRepository());
@@ -33,7 +34,10 @@ namespace CoreBlog.Controllers
 
         public IActionResult BlogListByWriter()
         {
-            var values=_blogManager.GetListWithCategoryByWriter(1);
+            Context _context = new Context();
+            var userMail = User.Identity.Name;
+            var WriterID = _context.Writers.Where(x => x.WriterMail == userMail).FirstOrDefault().WriterID;
+            var values=_blogManager.GetListWithCategoryByWriter(WriterID);
             return View(values);
         }
         [HttpGet]
@@ -49,13 +53,17 @@ namespace CoreBlog.Controllers
         public IActionResult BlogAdd(BlogModel blog)
         {
             BlogValidator _blogValidator = new BlogValidator();
-            
+
+            Context _context = new Context();
+            var userMail = User.Identity.Name;
+            var WriterID = _context.Writers.Where(x => x.WriterMail == userMail).FirstOrDefault().WriterID;
+
             ValidationResult result = _blogValidator.Validate(blog.Blogs);
             if (result.IsValid)
             {
                 blog.Blogs.BlogStatus = true;
                 blog.Blogs.BlogCreateDate = DateTime.Parse(DateTime.Now.ToShortDateString());
-                blog.Blogs.WriterID = 1;
+                blog.Blogs.WriterID = WriterID;
                 _blogManager.TAdd(blog.Blogs);
                 return RedirectToAction("BlogListByWriter", "Blog");
             }
