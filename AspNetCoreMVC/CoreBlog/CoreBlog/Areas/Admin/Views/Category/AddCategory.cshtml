@@ -1,0 +1,20 @@
+﻿@model EntityLayer.Concrete.Category
+@{
+    ViewData["Title"] = "AddCategory";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<p class="fs-3">YENİ KATEGORİ GİRİŞİ GİRİŞİ</p>
+
+<form  asp-controller="Category" asp-action="AddCategory" method="post">
+    <label class="form-control text-center">KATEGORİ ADI</label>
+    <input class="form-control" asp-for="CategoryName" />
+    <span asp-validation-for="CategoryName"> </span>
+    <hr class="hr hr-blurry" />
+    <label class="form-control text-center">KATEGORİ AÇIKLAMASI</label>
+    <input class="form-control" asp-for="CategoryDescription" />
+    <span asp-validation-for="CategoryDescription"> </span>
+    <hr class="hr hr-blurry" />
+    <button class="btn btn-info"> Kategori Kaydet</button>
+    </form>
+    

@@ -59,7 +59,7 @@ namespace CoreBlog
                 app.UseHsts();
             }
             ///----------
-            app.UseStatusCodePagesWithReExecute("/ErrorPage/Error1","?code={0}");
+            app.UseStatusCodePagesWithReExecute("/ErrorPage/Error1", "?code={0}");
 
 
             ///----------
@@ -81,9 +81,20 @@ namespace CoreBlog
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+            name: "areas",
+            pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+            );
+                endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+
+
+
         }
     }
 }
+
+
+/*<!--AREAS YÖNTEMÝ ÝÇÝN KAYNAK LÝNK https://geeksarray.com/blog/how-to-use-areas-in-asp-net-core-mvc-->*/
