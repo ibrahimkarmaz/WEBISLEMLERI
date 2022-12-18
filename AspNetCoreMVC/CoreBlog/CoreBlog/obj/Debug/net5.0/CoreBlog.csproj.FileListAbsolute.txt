@@ -225,3 +225,5 @@ C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CoreBlog
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CoreBlog\CoreBlog\obj\Debug\net5.0\Razor\Areas\Admin\Views\Widget\Index.cshtml.g.cs
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CoreBlog\CoreBlog\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\Components\Statistic1\Default.cshtml.g.cs
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CoreBlog\CoreBlog\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\Components\Statistic2\Default.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CoreBlog\CoreBlog\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\Components\Statistic4\Default.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\AspNetCoreMVC\CoreBlog\CoreBlog\obj\Debug\net5.0\Razor\Areas\Admin\Views\Chart\Index.cshtml.g.cs
