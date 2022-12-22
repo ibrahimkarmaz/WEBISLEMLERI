@@ -183,7 +183,7 @@
 
 
 
-   
+
     <!-- Mainly scripts -->
     <script src="~/AdminPanel/js/jquery-3.1.1.min.js"></script>
     <script src="~/AdminPanel/js/popper.min.js"></script>
@@ -212,7 +212,8 @@
             });
         });
     </script>
-   
+
+    @await RenderSectionAsync("scripts")
 
 </body>
 
