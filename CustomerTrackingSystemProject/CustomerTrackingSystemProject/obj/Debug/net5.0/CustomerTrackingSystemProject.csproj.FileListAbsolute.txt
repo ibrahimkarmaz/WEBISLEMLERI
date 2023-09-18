@@ -38,3 +38,8 @@ C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\CustomerTrackingSystem
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\CustomerTrackingSystemProject\CustomerTrackingSystemProject\obj\Debug\net5.0\CustomerTrackingSystemProject.genruntimeconfig.cache
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\CustomerTrackingSystemProject\CustomerTrackingSystemProject\obj\Debug\net5.0\ref\CustomerTrackingSystemProject.dll
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\CustomerTrackingSystemProject\CustomerTrackingSystemProject\obj\Debug\net5.0\CustomerTrackingSystemProject.csproj.CopyComplete
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\CustomerTrackingSystemProject\CustomerTrackingSystemProject\obj\Debug\net5.0\staticwebassets\CustomerTrackingSystemProject.StaticWebAssets.Pack.cache
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\CustomerTrackingSystemProject\CustomerTrackingSystemProject\obj\Debug\net5.0\staticwebassets\msbuild.CustomerTrackingSystemProject.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\CustomerTrackingSystemProject\CustomerTrackingSystemProject\obj\Debug\net5.0\staticwebassets\msbuild.build.CustomerTrackingSystemProject.props
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\CustomerTrackingSystemProject\CustomerTrackingSystemProject\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.CustomerTrackingSystemProject.props
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\CustomerTrackingSystemProject\CustomerTrackingSystemProject\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.CustomerTrackingSystemProject.props
