@@ -1,0 +1,56 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<h2>ÜRÜNLER LİSTESİ</h2>
+<a href="/Default/Index/">İNDEX'E GİT'</a>
+
+<h3>@ViewBag.m1</h3>
+<h3>@ViewBag.m2</h3>
+<h3>@ViewBag.total</h3>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kullanıcı Bilgisi Girişi</title>
+    <!-- Bootstrap 5 CSS dosyasını ekleyin -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Kullanıcı Bilgisi Girişi</h1>
+        <form>
+            <!-- TC Kimlik No Girişi -->
+            <div class="mb-3">
+                <label for="tcKimlikNo" class="form-label">TC Kimlik No:</label>
+                <input type="text" class="form-control" id="tcKimlikNo" placeholder="TC Kimlik No" required>
+            </div>
+
+            <!-- Ad ve Soyad Girişi -->
+            <div class="mb-3">
+                <label for="adSoyad" class="form-label">Ad ve Soyad:</label>
+                <input type="text" class="form-control" id="adSoyad" placeholder="Ad ve Soyad" required>
+            </div>
+
+            <!-- Telefon Numarası Girişi -->
+            <div class="mb-3">
+                <label for="telefon" class="form-label">Telefon Numarası:</label>
+                <input type="tel" class="form-control" id="telefon" placeholder="Telefon Numarası" required>
+            </div>
+
+            <!-- E-posta Adresi Girişi -->
+            <div class="mb-3">
+                <label for="email" class="form-label">E-posta Adresi:</label>
+                <input type="email" class="form-control" id="email" placeholder="E-posta Adresi" required>
+            </div>
+
+            <!-- Kaydet Butonu -->
+            <button type="submit" class="btn btn-primary">Kaydet</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap 5 JavaScript ve Popper.js dosyalarını ekleyin -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

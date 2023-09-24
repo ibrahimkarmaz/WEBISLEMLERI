@@ -1,0 +1,28 @@
+﻿@model ProjeOOPDers1.Entity.Product;
+@{
+    ViewData["Title"] = "UpdateProduct";
+    Layout = "~/Views/Shared/_CoreLayout.cshtml";
+}
+
+<div class="container">
+    <h1>Ürün Güncelleme</h1>
+    <form method="post">
+        <div class="mb-3">
+            <label asp-for="Id" class="form-label">Ürün Kodu: @Model.Id</label>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label">Ürün Adı</label>
+            <input asp-for="Name" type="text" class="form-control" id="productName" placeholder="Ürün adını girin" required>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Price" class="form-label">Fiyat</label>
+            <input asp-for="Price" type="number" class="form-control" id="productPrice" placeholder="Ürün fiyatını girin" required>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Stock" class="form-label">Stok Miktarı</label>
+            <input asp-for="Stock" type="number" class="form-control" id="stockQuantity" placeholder="Stok miktarını girin" required>
+        </div>
+        <button href="/Product/UpdateProduct" type="submit" class="btn btn-success">Ürünü Güncelleme</button>
+    </form>
+</div>
+

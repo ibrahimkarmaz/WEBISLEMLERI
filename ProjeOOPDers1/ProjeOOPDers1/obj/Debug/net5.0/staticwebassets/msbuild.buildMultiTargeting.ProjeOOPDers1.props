@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ProjeOOPDers1.props" />
+</Project>
