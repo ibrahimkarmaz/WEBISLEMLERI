@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "D4X6E80LpSrD5eRbjeq+vD784fcHRkOpG42oXR2QxTQTy4PGOg37aHXu0NGb460TvSnwBWxzBDhk3Yhvz4tAKw==",
+  "dgSpecHash": "HPSrGWxq0LBgc+58o7+swpUzzbMcND3aURmtWCp8zCK35Lhp4bgtAOIxDMTlkJ0ccP9GZt4Yz/iqMAJcYoZ3WQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\ibrah\\OneDrive\\Belgeler\\WEBDERSLERI\\WEBISLEMLERI\\Depo_Product\\Depo_Product\\Depo_Product.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ibrah\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512",
+    "C:\\Users\\ibrah\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.4.0\\fluentvalidation.aspnetcore.10.4.0.nupkg.sha512",
+    "C:\\Users\\ibrah\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.4.0\\fluentvalidation.dependencyinjectionextensions.10.4.0.nupkg.sha512",
     "C:\\Users\\ibrah\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ibrah\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\ibrah\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
