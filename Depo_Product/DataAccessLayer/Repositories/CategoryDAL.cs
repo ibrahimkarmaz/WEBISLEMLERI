@@ -19,7 +19,17 @@ namespace DataAccessLayer.Repositories
             c.SaveChanges();
         }
 
+        public Category GetById(int id)
+        {
+            return c.Categories.Where(x=>x.CategoryID==id).FirstOrDefault();
+        }
+
         public List<Category> GetCategories()
+        {
+            return c.Categories.ToList();
+        }
+
+        public List<Category> getList()
         {
             return c.Categories.ToList();
         }

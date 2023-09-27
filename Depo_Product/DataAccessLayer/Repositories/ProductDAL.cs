@@ -20,6 +20,16 @@ namespace DataAccessLayer.Repositories
             c.SaveChanges();
         }
 
+        public Product GetById(int id)
+        {
+           return c.products.Where(x => x.ProductID == id).FirstOrDefault();
+        }
+
+        public List<Product> getList()
+        {
+            return c.products.ToList();
+        }
+
         public List<Product> GetProducts()
         {
             return c.products.ToList();
