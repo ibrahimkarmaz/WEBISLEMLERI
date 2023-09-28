@@ -165,3 +165,7 @@ C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\Depo_Product\Depo_Prod
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\Depo_Product\Depo_Product\obj\Debug\net5.0\Razor\Views\Partials\Partial_Sidebar.cshtml.g.cs
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\Depo_Product\Depo_Product\obj\Debug\net5.0\Razor\Views\Partials\Partial_Footer.cshtml.g.cs
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\Depo_Product\Depo_Product\obj\Debug\net5.0\Razor\Views\Product\AddProduct.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\Depo_Product\Depo_Product\obj\Debug\net5.0\Razor\Views\Product\UpdateProduct.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\Depo_Product\Depo_Product\obj\Debug\net5.0\Razor\Views\Customer\Index.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\Depo_Product\Depo_Product\obj\Debug\net5.0\Razor\Views\Customer\AddCustomer.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\Depo_Product\Depo_Product\obj\Debug\net5.0\Razor\Views\Customer\UpdateCustomer.cshtml.g.cs

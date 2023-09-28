@@ -1,13 +1,13 @@
 ﻿@using EntitiyLayer.Concrete
-@model Product
+@model Customer
 @{
-    ViewData["Title"] = "AddProduct";
+    ViewData["Title"] = "AddCustomer";
     Layout = "~/Views/Shared/_UILayout.cshtml";
 }
 
 <div class="container">
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addProductModal">
-        Ürün Ekle
+        Müşteri Ekle
     </button>
 
     <div class="modal fade" id="addProductModal" tabindex="-1" role="dialog" aria-labelledby="addProductModalLabel" aria-hidden="true">
@@ -20,21 +20,16 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form method="post" >
+                    <form method="post">
                         <div class="form-group">
-                            <label asp-for="ProductName">Ürün Adı:</label>
-                            <input type="text" asp-for="ProductName" class="form-control">
-                            <span asp-validation-for="ProductName" class="text-danger"></span>
+                            <label asp-for="CustomerName">Müşteri Adı:</label>
+                            <input type="text" asp-for="CustomerName" class="form-control">
+                            <span asp-validation-for="CustomerName" class="text-danger"></span>
                         </div>
                         <div class="form-group">
-                            <label asp-for="ProductPrice">Fiyat:</label>
-                            <input type="text" asp-for="ProductPrice" class="form-control">
-                             <span asp-validation-for="ProductPrice" class="text-danger"></span>
-                        </div>
-                        <div class="form-group">
-                            <label asp-for="ProductStock">Stok Sayısı:</label>
-                            <input type="text" asp-for="ProductStock" class="form-control">
-                            <span asp-validation-for="ProductStock" class="text-danger"></span>
+                            <label asp-for="CustomerCity">Fiyat:</label>
+                            <input type="text" asp-for="CustomerCity" class="form-control">
+                            <span asp-validation-for="CustomerCity" class="text-danger"></span>
                         </div>
                         <button type="submit" class="btn btn-primary col-12 p-2">Kaydet</button>
                     </form>
@@ -44,7 +39,7 @@
         </div>
     </div>
 
-    
+
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
