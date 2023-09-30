@@ -11,5 +11,9 @@ namespace EntitiyLayer.Concrete
         public int CustomerID { get; set; }
         public string CustomerName { get; set; }
         public string CustomerCity { get; set; }
+
+        //İlişki 1'e çok
+        public int JobID{ get; set; }
+        public Job Job{ get; set; }
     }
 }

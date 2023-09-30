@@ -1,0 +1,47 @@
+﻿@using EntitiyLayer.Concrete
+@model Job
+
+@{
+    ViewData["Title"] = "UpdateJob";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+
+
+<div class="container">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addProductModal">
+        Meslek Düzenle
+    </button>
+
+    <div class="modal fade" id="addProductModal" tabindex="-1" role="dialog" aria-labelledby="addProductModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addProductModalLabel">Ürün Ekle</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form method="post" action="/Job/UpdateJob">
+                          <div class="form-group">
+                            <label asp-for="JobID">Meslek ID:</label>
+                            <input type="text" asp-for="JobID" class="form-control" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="JobName">Meslek Adı:</label>
+                            <input type="text" asp-for="JobName" class="form-control">
+                            <span asp-validation-for="JobName" class="text-danger"></span>
+                        </div>
+                        <button type="submit" class="btn btn-success col-12 p-2">Düzenle</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

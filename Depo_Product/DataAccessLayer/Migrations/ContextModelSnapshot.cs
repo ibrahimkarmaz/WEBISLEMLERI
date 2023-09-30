@@ -46,9 +46,29 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("CustomerName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("JobID")
+                        .HasColumnType("int");
+
                     b.HasKey("CustomerID");
 
+                    b.HasIndex("JobID");
+
                     b.ToTable("customers");
+                });
+
+            modelBuilder.Entity("EntitiyLayer.Concrete.Job", b =>
+                {
+                    b.Property<int>("JobID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("JobName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("JobID");
+
+                    b.ToTable("Jobs");
                 });
 
             modelBuilder.Entity("EntitiyLayer.Concrete.Product", b =>
@@ -70,6 +90,22 @@ namespace DataAccessLayer.Migrations
                     b.HasKey("ProductID");
 
                     b.ToTable("products");
+                });
+
+            modelBuilder.Entity("EntitiyLayer.Concrete.Customer", b =>
+                {
+                    b.HasOne("EntitiyLayer.Concrete.Job", "Job")
+                        .WithMany("Customers")
+                        .HasForeignKey("JobID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Job");
+                });
+
+            modelBuilder.Entity("EntitiyLayer.Concrete.Job", b =>
+                {
+                    b.Navigation("Customers");
                 });
 #pragma warning restore 612, 618
         }
