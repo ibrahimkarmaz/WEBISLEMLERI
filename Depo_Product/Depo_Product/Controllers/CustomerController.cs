@@ -11,7 +11,7 @@ namespace Depo_Product.Controllers
         CustomerManager _customerManager = new CustomerManager(new EFCustomerDAL());
         public IActionResult Index()
         {
-            var values = _customerManager.TGetList();
+            var values = _customerManager.GetCustomerAndJob();
             return View(values);
         }
 

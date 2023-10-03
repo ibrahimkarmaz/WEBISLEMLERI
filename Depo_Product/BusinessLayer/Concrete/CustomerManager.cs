@@ -23,6 +23,11 @@ namespace BusinessLayer.Concrete
             return _customerDAL.GetById(id);
         }
 
+        public List<Customer> GetCustomerAndJob()
+        {
+            return _customerDAL.GetCustomerListWithJob();
+        }
+
         public void TAdd(Customer t)
         {
             _customerDAL.Insert(t);
