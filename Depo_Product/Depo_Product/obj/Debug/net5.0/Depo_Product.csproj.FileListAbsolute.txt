@@ -172,3 +172,4 @@ C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\Depo_Product\Depo_Prod
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\Depo_Product\Depo_Product\obj\Debug\net5.0\Razor\Views\Job\Index.cshtml.g.cs
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\Depo_Product\Depo_Product\obj\Debug\net5.0\Razor\Views\Job\AddJob.cshtml.g.cs
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\Depo_Product\Depo_Product\obj\Debug\net5.0\Razor\Views\Job\UpdateJob.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\Depo_Product\Depo_Product\obj\Debug\net5.0\Razor\Views\Settings\Index.cshtml.g.cs

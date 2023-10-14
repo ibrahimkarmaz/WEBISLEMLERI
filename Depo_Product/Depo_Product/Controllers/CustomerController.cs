@@ -3,6 +3,9 @@ using DataAccessLayer.Abstract;
 using DataAccessLayer.EntityFramework;
 using EntitiyLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Depo_Product.Controllers
 {
@@ -18,6 +21,14 @@ namespace Depo_Product.Controllers
         [HttpGet]
         public IActionResult AddCustomer()
         {
+            JobManager jobManager = new JobManager(new EFJobDAL());
+            List<SelectListItem> values=(from x in jobManager.TGetList()
+                                         select new SelectListItem
+                                         {
+                                             Text=x.JobName,
+                                             Value=x.JobID.ToString()
+                                         }).ToList();
+            ViewBag.v1 = values;
             return View();
         }
 
