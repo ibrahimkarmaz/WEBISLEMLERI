@@ -173,3 +173,8 @@ C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\Depo_Product\Depo_Prod
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\Depo_Product\Depo_Product\obj\Debug\net5.0\Razor\Views\Job\AddJob.cshtml.g.cs
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\Depo_Product\Depo_Product\obj\Debug\net5.0\Razor\Views\Job\UpdateJob.cshtml.g.cs
 C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\Depo_Product\Depo_Product\obj\Debug\net5.0\Razor\Views\Settings\Index.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\Depo_Product\Depo_Product\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\Depo_Product\Depo_Product\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\Depo_Product\Depo_Product\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\Depo_Product\Depo_Product\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\ibrah\OneDrive\Belgeler\WEBDERSLERI\WEBISLEMLERI\Depo_Product\Depo_Product\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
