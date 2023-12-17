@@ -1,3 +1,5 @@
+using DataAccessLayer.Concrete;
+using Depo_Product.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -23,6 +25,13 @@ namespace Depo_Product
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<Context>(); // Have to add For Identity Library //Identitiy için kullanýldý.
+            services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>().AddErrorDescriber<CustomIdentityValidator>(); // Have to add For Identity Library //Identitiy için kullanýldý.
+
+            /*AddErrorDescriber<CustomIdentityValidator>(); eðer Identitiy kütüphanesinde deðiþiklik yapýldýysa kullanýlýr.*/
+
+
+
             services.AddControllersWithViews();
         }
 
