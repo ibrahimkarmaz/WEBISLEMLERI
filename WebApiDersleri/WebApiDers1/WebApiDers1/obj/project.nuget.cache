@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "8pbz14/EkkGtkfL/E305ZwZVfuX4/rIJJTgWO33Bl9gn9z2NrRItLod3AEqvFR7YLpZE5j+TkiyzKjnv2Ukx9Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ibrah\\OneDrive\\Belgeler\\WEBDERSLERI\\WEBISLEMLERI\\WebApiDersleri\\WebApiDers1\\WebApiDers1\\WebApiDers1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ibrah\\.nuget\\packages\\bogus\\35.0.1\\bogus.35.0.1.nupkg.sha512",
+    "C:\\Users\\ibrah\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\ibrah\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\ibrah\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\ibrah\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\ibrah\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\ibrah\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
